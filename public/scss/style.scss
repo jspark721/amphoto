@@ -1,3 +1,4 @@
+$white: #FFFFFF;
 $light: #FAF5F0;
 $tan: #C9BEB4;
 $pink: #D5C1BE;
@@ -161,6 +162,7 @@ h5 {
   h4 {
     font-weight: 100;
     margin-top: -50px;
+    margin-bottom: 70px;
     font-size: 1.4em;
     text-align: center;
     padding: 20px 180px;
@@ -172,7 +174,7 @@ h5 {
 .main-line {
   width: 50%;
   margin-left: 25%;
-  margin-top: 10%;
+  margin-top: 8%;
   margin-bottom: 70px;
   height: 2px;
   background: $pink;
@@ -185,41 +187,82 @@ h5 {
   height: 200vh;
 }
 
+.section--box {
+  width: 450px;
+  height: 450px;
+  border: 1px solid $teal;
+}
+
+.section--img {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  width: 450px;
+  height: 450px;
+  img {
+    position: absolute;
+  }
+}
+
 .section-one {
   position: absolute;
   left: 10%;
   width: 50%;
 }
 
-.section--img {
-  width: 350px;
-  height: 350px;
-  border: 1px solid $teal;
-}
-
 .section-two {
   position: absolute;
   right: 10%;
   width: 50%;
-  .section--img {
+  .section--box {
     position: absolute;
     right: 0;
     top: 400px;
   }
 }
+.section-three {
+  position: absolute;
+  left: 10%;
+  width: 50%;
+  .section--box {
+    position: absolute;
+    top: 800px;
+  }
+}
+
 
 .num {
   font-size: 4.5em;
-  color: $teal;
+  color: $white;
+  top: 50px;
+  text-shadow: 1px 1px 3px rgba($pink, .5);
+  position: absolute;
 }
 
 .right {
-  text-align: right;
+  position: absolute;
+  left: 350px;
+}
+.right2 {
+  position: absolute;
+  left: 362px;
 }
 
 .section--title {
-  color: $teal;
-  font-size: 3em;
-  margin-top: -120px;
+  color: $white;
+  text-shadow: 1px 1px 3px rgba($pink, .5);
+  font-style: italic;
+  font-size: 3.5em;
+  margin-top: -270px;
   margin-left: 360px;
+  position: absolute;
+}
+.section--title_left {
+  color: $white;
+  text-shadow: 1px 1px 3px rgba($pink, .5);
+  font-style: italic;
+  font-size: 3.5em;
+  margin-top: -270px;
+  left: -255px;
+  position: absolute;
 }
