@@ -65,7 +65,7 @@ h5 {
 .hero {
   width: 100%;
   height: 95vh;
-  background-image: url("https://static1.squarespace.com/static/52852288e4b0215b07253c80/5936dce915cf7db53a29ab5c/5bedd8d5562fa70b21d466a7/1542314212369/118838050006.jpg");
+  background-image: url("../img/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -118,6 +118,7 @@ h5 {
   width: 100%;
   margin-top: 50px; }
   .main-center h3 {
+    text-align: center;
     font-family: "Parisienne", cursive;
     letter-spacing: 2px;
     padding-left: 25px;
