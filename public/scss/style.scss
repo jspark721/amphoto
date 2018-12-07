@@ -347,13 +347,26 @@ footer {
   text-align: center;
 }
 
+.footer-social {
+  display: block;
+  margin: 0 auto;
+  i {
+    margin-top: 35px;
+    padding: 35px;
+    color: lighten($gray, 15%);
+    &:hover {
+      color: $light;
+      transition: all .5s ease;
+    }
+  }
+}
+
 .footer-text {
-  padding-top: 120px;
+  padding-top: 25px;
   p {
     color: $dark;
-    font-size: .7em;
-    padding-top: 15px;
-    line-height: 1.2em;
+    font-size: .5em;
+    line-height: 1.5em;
     letter-spacing: 3px;
     text-transform: uppercase;
     vertical-align: bottom;
