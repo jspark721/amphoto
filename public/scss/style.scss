@@ -19,11 +19,13 @@ html, body {
   padding: 0;
   font-family: $serif;
   background: $light;
+  overflow-x: hidden;
 }
 
 a {
   text-decoration: none;
   color: $dark;
+  transition: all .5s ease;
 }
 
 h4 {
@@ -39,6 +41,29 @@ h5 {
   font-weight: 100;
   color: $dark;
 }
+
+button {
+  display: inline-block;
+  padding: 20px;
+  outline: 0;
+  border: none;
+  font-family: $body;
+  color: $dark;
+}
+
+.btn-main {
+  background: $pink;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: .7em;
+  transition: all .5s ease;
+  &:hover {
+    background: $gray;
+    transition: all .5s ease;
+  }
+}
 .topbar {
   background: $light;
   position: fixed;
@@ -53,13 +78,6 @@ h5 {
   left: 10px;
   top: 8px;
   position: absolute;
-  z-index: 10;
-}
-
-.nav {
-  position: absolute;
-  width: 100%;
-  height: 55px;
   z-index: 10;
 }
 
@@ -131,6 +149,16 @@ h5 {
   padding-top: 120px;
 }
 
+.bio-middle {
+  position: absolute;
+  padding-top: 40px;
+  width: 100%;
+  left: 37%;
+  .flower {
+    width: 200px;
+  }
+}
+
 .bio-right {
   position: absolute;
   width: 50%;
@@ -184,7 +212,7 @@ h5 {
   margin-top: 20%;
   background: $light;
   width: 100%;
-  height: 200vh;
+  height: 180vh;
 }
 
 .section--box {
@@ -232,7 +260,7 @@ h5 {
 
 
 .num {
-  font-size: 4.5em;
+  font-size: 4em;
   color: $white;
   top: 50px;
   text-shadow: 1px 1px 3px rgba($pink, .5);
@@ -253,16 +281,87 @@ h5 {
   text-shadow: 1px 1px 3px rgba($pink, .5);
   font-style: italic;
   font-size: 3.5em;
-  margin-top: -270px;
+  margin-top: -290px;
   margin-left: 360px;
   position: absolute;
+  span {
+    background-color: rgba($pink, 0.5);
+  }
 }
 .section--title_left {
   color: $white;
   text-shadow: 1px 1px 3px rgba($pink, .5);
   font-style: italic;
   font-size: 3.5em;
-  margin-top: -270px;
-  left: -255px;
+  margin-top: -290px;
+  left: -265px;
   position: absolute;
+  span {
+    background-color: rgba($gray, 0.5);
+  }
+}
+.quote {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  background: url("../img/header-cropped.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.overlay {
+  background-color: rgba($dark, .2);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  .hr-line {
+    width: 350px;
+    margin-left: 10%;
+    background: $gray;
+    height: 5px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba($pink, .5);
+  }
+  h3 {
+    font-size: 2.5em;
+    color: $white;
+    padding-top: 10%;
+    padding-left: 10%;
+    text-shadow: 1px 1px 3px rgba($pink, .5);
+  }
+  .buttons {
+    margin-left: 10%;
+    margin-top: -10px;
+  }
+}
+
+footer {
+  background: $gray;
+  margin-top: -20px;
+  width: 100%;
+  height: 25vh;
+  text-align: center;
+}
+
+.footer-text {
+  padding-top: 120px;
+  p {
+    color: $dark;
+    font-size: .7em;
+    padding-top: 15px;
+    line-height: 1.2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    vertical-align: bottom;
+  }
+  a {
+    background: rgba($pink, .7);
+    &:hover {
+      background: rgba($light, .7);
+    }
+  }
 }

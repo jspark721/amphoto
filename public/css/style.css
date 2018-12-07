@@ -3,11 +3,13 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: "Lora", serif;
-  background: #FAF5F0; }
+  background: #FAF5F0;
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
-  color: #16160E; }
+  color: #16160E;
+  transition: all .5s ease; }
 
 h4 {
   font-family: "Cormorant Garamond", serif;
@@ -22,6 +24,26 @@ h5 {
   font-weight: 100;
   color: #16160E; }
 
+button {
+  display: inline-block;
+  padding: 20px;
+  outline: 0;
+  border: none;
+  font-family: "Cormorant Garamond", serif;
+  color: #16160E; }
+
+.btn-main {
+  background: #D5C1BE;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 15px;
+  font-weight: 500;
+  font-size: .7em;
+  transition: all .5s ease; }
+  .btn-main:hover {
+    background: #B5B5C0;
+    transition: all .5s ease; }
+
 .topbar {
   background: #FAF5F0;
   position: fixed;
@@ -35,12 +57,6 @@ h5 {
   left: 10px;
   top: 8px;
   position: absolute;
-  z-index: 10; }
-
-.nav {
-  position: absolute;
-  width: 100%;
-  height: 55px;
   z-index: 10; }
 
 .navbar {
@@ -101,6 +117,14 @@ h5 {
   position: absolute;
   padding-top: 120px; }
 
+.bio-middle {
+  position: absolute;
+  padding-top: 40px;
+  width: 100%;
+  left: 37%; }
+  .bio-middle .flower {
+    width: 200px; }
+
 .bio-right {
   position: absolute;
   width: 50%;
@@ -147,7 +171,7 @@ h5 {
   margin-top: 20%;
   background: #FAF5F0;
   width: 100%;
-  height: 200vh; }
+  height: 180vh; }
 
 .section--box {
   width: 450px;
@@ -186,7 +210,7 @@ h5 {
     top: 800px; }
 
 .num {
-  font-size: 4.5em;
+  font-size: 4em;
   color: #FFFFFF;
   top: 50px;
   text-shadow: 1px 1px 3px rgba(213, 193, 190, 0.5);
@@ -205,15 +229,75 @@ h5 {
   text-shadow: 1px 1px 3px rgba(213, 193, 190, 0.5);
   font-style: italic;
   font-size: 3.5em;
-  margin-top: -270px;
+  margin-top: -290px;
   margin-left: 360px;
   position: absolute; }
+  .section--title span {
+    background-color: rgba(213, 193, 190, 0.5); }
 
 .section--title_left {
   color: #FFFFFF;
   text-shadow: 1px 1px 3px rgba(213, 193, 190, 0.5);
   font-style: italic;
   font-size: 3.5em;
-  margin-top: -270px;
-  left: -255px;
+  margin-top: -290px;
+  left: -265px;
   position: absolute; }
+  .section--title_left span {
+    background-color: rgba(181, 181, 192, 0.5); }
+
+.quote {
+  position: relative;
+  width: 100%;
+  height: 75vh;
+  background: url("../img/header-cropped.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; }
+
+.overlay {
+  background-color: rgba(22, 22, 14, 0.2);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0; }
+  .overlay .hr-line {
+    width: 350px;
+    margin-left: 10%;
+    background: #B5B5C0;
+    height: 5px;
+    margin-top: -20px;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(213, 193, 190, 0.5); }
+  .overlay h3 {
+    font-size: 2.5em;
+    color: #FFFFFF;
+    padding-top: 10%;
+    padding-left: 10%;
+    text-shadow: 1px 1px 3px rgba(213, 193, 190, 0.5); }
+  .overlay .buttons {
+    margin-left: 10%;
+    margin-top: -10px; }
+
+footer {
+  background: #B5B5C0;
+  margin-top: -20px;
+  width: 100%;
+  height: 25vh;
+  text-align: center; }
+
+.footer-text {
+  padding-top: 120px; }
+  .footer-text p {
+    color: #16160E;
+    font-size: .7em;
+    padding-top: 15px;
+    line-height: 1.2em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    vertical-align: bottom; }
+  .footer-text a {
+    background: rgba(213, 193, 190, 0.7); }
+    .footer-text a:hover {
+      background: rgba(250, 245, 240, 0.7); }
