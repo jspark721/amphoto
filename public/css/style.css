@@ -9,7 +9,7 @@ html, body {
 a {
   text-decoration: none;
   color: #16160E;
-  transition: all .5s ease; }
+  transition: all 0.5s ease; }
 
 h4 {
   font-family: "Cormorant Garamond", serif;
@@ -39,10 +39,10 @@ button {
   margin-right: 15px;
   font-weight: 500;
   font-size: .7em;
-  transition: all .5s ease; }
+  transition: all 0.5s ease; }
   .btn-main:hover {
     background: #B5B5C0;
-    transition: all .5s ease; }
+    transition: all 0.5s ease; }
 
 .topbar {
   background: #FAF5F0;
@@ -70,17 +70,17 @@ button {
     font-size: 10px;
     letter-spacing: 3px; }
   .navbar a {
-    transition: all .5s ease;
+    transition: all 0.5s ease;
     padding: 5px; }
     .navbar a:hover {
       color: #FAF5F0;
       background: #D5C1BE;
       padding: 5px;
-      transition: all .5s ease; }
+      transition: all 0.5s ease; }
 
 .hero {
   width: 100%;
-  height: 95vh;
+  height: 100vh;
   background-image: url("../img/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -93,7 +93,7 @@ button {
   width: 100%; }
   .title h1 {
     text-align: center;
-    font-size: 3em;
+    font-size: 3.5em;
     color: #FAF5F0;
     letter-spacing: 9px; }
   .title h2 {
@@ -104,7 +104,7 @@ button {
     font-family: "Cormorant Garamond", serif;
     color: #FAF5F0;
     text-transform: uppercase;
-    font-size: 1.3em; }
+    font-size: 1.5em; }
 
 .bio {
   width: 100%;
@@ -119,11 +119,12 @@ button {
 
 .bio-middle {
   position: absolute;
-  padding-top: 40px;
-  width: 100%;
-  left: 37%; }
+  display: flex;
+  padding-top: 85px;
+  width: 100%; }
   .bio-middle .flower {
-    width: 200px; }
+    height: 150px;
+    margin: 0 auto; }
 
 .bio-right {
   position: absolute;
@@ -168,9 +169,8 @@ button {
   background: #D5C1BE; }
 
 .section {
-  margin-top: 20%;
+  margin-top: 13%;
   background: #FAF5F0;
-  width: 100%;
   height: 180vh; }
 
 .section--box {
@@ -185,7 +185,11 @@ button {
   width: 450px;
   height: 450px; }
   .section--img img {
-    position: absolute; }
+    position: absolute;
+    transition: all 0.5s ease; }
+    .section--img img:hover {
+      transform: scale(1.1);
+      transition: all 0.5s ease; }
 
 .section-one {
   position: absolute;
@@ -284,22 +288,22 @@ footer {
   background: #B5B5C0;
   margin-top: -20px;
   width: 100%;
-  height: 25vh;
+  height: 35vh;
   text-align: center; }
 
 .footer-social {
   display: block;
   margin: 0 auto; }
   .footer-social i {
-    margin-top: 35px;
+    margin-top: 75px;
     padding: 35px;
     color: #dedee3; }
     .footer-social i:hover {
       color: #FAF5F0;
-      transition: all .5s ease; }
+      transition: all 0.5s ease; }
 
 .footer-text {
-  padding-top: 25px; }
+  padding-top: 55px; }
   .footer-text p {
     color: #16160E;
     font-size: .5em;
