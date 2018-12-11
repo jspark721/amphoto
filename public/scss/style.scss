@@ -53,7 +53,7 @@ button {
 }
 
 .btn-main {
-  background: $pink;
+  background: lighten($pink, 2%);
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-right: 15px;
@@ -141,72 +141,47 @@ button {
   width: 100%;
   height: 50vh;
   background: $pink;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 0.5fr 2fr;
+  align-items: center;
+  justify-items: center;
 }
 
-.bio-left {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  padding-top: 120px;
-}
-
-.bio-middle {
-  position: absolute;
-  display: flex;
-  padding-top: 85px;
-  width: 100%;
-  .flower {
-    height: 150px;
-    margin: 0 auto;
-  }
-}
-
-.bio-right {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  margin-left: 50%;
-  padding-top: 120px;
+.flower {
+  height: 150px;
+  margin: 0 auto;
 }
 
 .main {
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   background: $light;
+  display: grid;
+  justify-items: center;
+}
+.main-star {
+  text-align: center;
+  font-size: 3.2em;
+  color: lighten($brown, 10%);
+  opacity: .2;
 }
 
-.main-center {
-  position: absolute;
-  width: 100%;
-  margin-top: 50px;
-  h3 {
-    text-align: center;
-    font-family: $cursive;
-    letter-spacing: 2px;
-    padding-left: 25px;
-    font-size: 3.2em;
-    color: lighten($brown, 10%);
-    opacity: .2;
-  }
-  h4 {
-    font-weight: 100;
-    margin-top: -50px;
-    margin-bottom: 70px;
-    font-size: 1.4em;
-    text-align: center;
-    padding: 20px 180px;
-    font-family: $body;
-    color: $dark;
-  }
+.main-quote {
+  font-weight: 100;
+  font-size: 1.4em;
+  padding: 20px 70px;
+  margin-bottom: 50px;
+  font-family: $body;
+  color: $dark;
 }
 
 .main-line {
   width: 50%;
-  margin-left: 25%;
-  margin-top: 8%;
-  margin-bottom: 70px;
-  height: 2px;
+  margin-top: 70px;
+  height: 5px;
   background: $pink;
+  opacity: .2;
 }
 
 .section {
@@ -218,7 +193,7 @@ button {
 .section--box {
   width: 450px;
   height: 450px;
-  border: 1px solid $teal;
+  border: 1px solid rgba($white, .5);
 }
 
 .section--img {
@@ -305,18 +280,19 @@ button {
     background-color: rgba($gray, 0.5);
   }
 }
+
 .quote {
   position: relative;
   width: 100%;
   height: 75vh;
-  background: url("../img/header-cropped.jpg");
+  background: url("../img/header2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
 .overlay {
-  background-color: rgba($dark, .2);
+  background-color: rgba($dark, .3);
   position: absolute;
   left: 0;
   right: 0;

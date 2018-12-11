@@ -33,7 +33,7 @@ button {
   color: #16160E; }
 
 .btn-main {
-  background: #D5C1BE;
+  background: #d9c7c4;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-right: 15px;
@@ -109,64 +109,44 @@ button {
 .bio {
   width: 100%;
   height: 50vh;
-  background: #D5C1BE; }
+  background: #D5C1BE;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 2fr 0.5fr 2fr;
+  align-items: center;
+  justify-items: center; }
 
-.bio-left {
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  padding-top: 120px; }
-
-.bio-middle {
-  position: absolute;
-  display: flex;
-  padding-top: 85px;
-  width: 100%; }
-  .bio-middle .flower {
-    height: 150px;
-    margin: 0 auto; }
-
-.bio-right {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  margin-left: 50%;
-  padding-top: 120px; }
+.flower {
+  height: 150px;
+  margin: 0 auto; }
 
 .main {
-  height: 50vh;
+  height: 60vh;
   width: 100%;
-  background: #FAF5F0; }
+  background: #FAF5F0;
+  display: grid;
+  justify-items: center; }
 
-.main-center {
-  position: absolute;
-  width: 100%;
-  margin-top: 50px; }
-  .main-center h3 {
-    text-align: center;
-    font-family: "Parisienne", cursive;
-    letter-spacing: 2px;
-    padding-left: 25px;
-    font-size: 3.2em;
-    color: #9c8581;
-    opacity: .2; }
-  .main-center h4 {
-    font-weight: 100;
-    margin-top: -50px;
-    margin-bottom: 70px;
-    font-size: 1.4em;
-    text-align: center;
-    padding: 20px 180px;
-    font-family: "Cormorant Garamond", serif;
-    color: #16160E; }
+.main-star {
+  text-align: center;
+  font-size: 3.2em;
+  color: #9c8581;
+  opacity: .2; }
+
+.main-quote {
+  font-weight: 100;
+  font-size: 1.4em;
+  padding: 20px 70px;
+  margin-bottom: 50px;
+  font-family: "Cormorant Garamond", serif;
+  color: #16160E; }
 
 .main-line {
   width: 50%;
-  margin-left: 25%;
-  margin-top: 8%;
-  margin-bottom: 70px;
-  height: 2px;
-  background: #D5C1BE; }
+  margin-top: 70px;
+  height: 5px;
+  background: #D5C1BE;
+  opacity: .2; }
 
 .section {
   margin-top: 13%;
@@ -176,7 +156,7 @@ button {
 .section--box {
   width: 450px;
   height: 450px;
-  border: 1px solid #324651; }
+  border: 1px solid rgba(255, 255, 255, 0.5); }
 
 .section--img {
   position: relative;
@@ -254,13 +234,13 @@ button {
   position: relative;
   width: 100%;
   height: 75vh;
-  background: url("../img/header-cropped.jpg");
+  background: url("../img/header2.jpg");
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
 
 .overlay {
-  background-color: rgba(22, 22, 14, 0.2);
+  background-color: rgba(22, 22, 14, 0.3);
   position: absolute;
   left: 0;
   right: 0;
