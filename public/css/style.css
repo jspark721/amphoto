@@ -255,21 +255,21 @@ footer {
       background: rgba(250, 245, 240, 0.7); }
 
 /* start of mobile screen styles */
-@media screen and (max-width: 991px) {
+@media only screen and (max-width: 991px) {
   /* start of large tablet styles */
   .section-container {
     margin-left: 45px;
     margin-right: 45px; } }
 
-@media screen and (max-width: 897px) {
+@media only screen and (max-width: 897px) {
   /* start of medium tablet styles */ }
 
-@media screen and (max-width: 747px) {
+@media only screen and (max-width: 747px) {
   /* start of small tablet styles */
   .section-box {
     height: 40%; } }
 
-@media screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   /* hide main top nav bar */
   .topbar {
     display: none; }
@@ -329,7 +329,7 @@ footer {
     -webkit-transition: all .5s ease;
     transition: all .5s ease; } }
 
-@media screen and (max-width: 594px) {
+@media only screen and (max-width: 594px) {
   /* start of phone styles */
   .section {
     display: block;
