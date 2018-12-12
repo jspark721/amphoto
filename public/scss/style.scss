@@ -29,6 +29,11 @@ a {
   transition: $ease;
 }
 
+h3 {
+  font-size: 2.5em;
+  color: $white;
+}
+
 h4 {
   font-family: $body;
   text-align: center;
@@ -184,102 +189,162 @@ button {
   opacity: .2;
 }
 
+.section-container {
+  max-width: 970px;
+  margin: auto;
+}
+
 .section {
-  margin-top: 13%;
-  background: $light;
-  height: 180vh;
+  height: 100vh;
+  width: 100%;
+  margin-top: -80px;
+  display: grid;
+  grid-gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  transition: $ease;
 }
 
-.section--box {
-  width: 450px;
-  height: 450px;
-  border: 1px solid rgba($white, .5);
-}
-
-.section--img {
-  position: relative;
+.section-box {
+  height: 50%;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
-  margin: 0 auto;
-  width: 450px;
-  height: 450px;
+  transition: $ease;
+  h5 {
+    font-size: 1.1em;
+  }
+  &:hover {
+    background-color: $pink;
+    transform: scale(1.02);
+    h5 {
+      color: $light;
+    }
+  }
   img {
-    position: absolute;
     transition: $ease;
     &:hover {
-      transform: scale(1.1);
+      opacity: .7;
+    }
+  }
+}
+
+.section-bottom {
+  position: absolute;
+  margin-top: -235px;
+  right: 10%;
+  height: 30px;
+  h3 {
+    margin: 0;
+    color: $pink;
+    font-family: $cursive;
+    opacity: .7;
+    font-size: 3.5em;
+    text-shadow: 1px 1px 1px rgba($pink, .1);
+    transition: $ease;
+    &:hover {
+      color: $white;
       transition: $ease;
     }
   }
 }
 
-.section-one {
-  position: absolute;
-  left: 10%;
-  width: 50%;
-}
-
-.section-two {
-  position: absolute;
-  right: 10%;
-  width: 50%;
-  .section--box {
-    position: absolute;
-    right: 0;
-    top: 400px;
-  }
-}
-.section-three {
-  position: absolute;
-  left: 10%;
-  width: 50%;
-  .section--box {
-    position: absolute;
-    top: 800px;
-  }
-}
-
-
-.num {
-  font-size: 4em;
-  color: $white;
-  top: 50px;
-  text-shadow: 1px 1px 3px rgba($pink, .5);
-  position: absolute;
-}
-
-.right {
-  position: absolute;
-  left: 350px;
-}
-.right2 {
-  position: absolute;
-  left: 362px;
-}
-
-.section--title {
-  color: $white;
-  text-shadow: 1px 1px 3px rgba($pink, .5);
-  font-style: italic;
-  font-size: 3.5em;
-  margin-top: -290px;
-  margin-left: 360px;
-  position: absolute;
-  span {
-    background-color: rgba($pink, 0.5);
-  }
-}
-.section--title_left {
-  color: $white;
-  text-shadow: 1px 1px 3px rgba($pink, .5);
-  font-style: italic;
-  font-size: 3.5em;
-  margin-top: -290px;
-  left: -265px;
-  position: absolute;
-  span {
-    background-color: rgba($gray, 0.5);
-  }
-}
+// .section {
+//   margin-top: 13%;
+//   background: $light;
+//   height: 180vh;
+// }
+//
+// .section--box {
+//   width: 450px;
+//   height: 450px;
+//   border: 1px solid rgba($white, .5);
+// }
+//
+// .section--img {
+//   position: relative;
+//   overflow: hidden;
+//   margin: 0 auto;
+//   width: 450px;
+//   height: 450px;
+//   img {
+//     position: absolute;
+//     transition: $ease;
+//     &:hover {
+//       transform: scale(1.1);
+//       transition: $ease;
+//     }
+//   }
+// }
+//
+// .section-one {
+//   position: absolute;
+//   left: 10%;
+//   width: 50%;
+// }
+//
+// .section-two {
+//   position: absolute;
+//   right: 10%;
+//   width: 50%;
+//   .section--box {
+//     position: absolute;
+//     right: 0;
+//     top: 400px;
+//   }
+// }
+// .section-three {
+//   position: absolute;
+//   left: 10%;
+//   width: 50%;
+//   .section--box {
+//     position: absolute;
+//     top: 800px;
+//   }
+// }
+//
+//
+// .num {
+//   font-size: 4em;
+//   color: $white;
+//   top: 50px;
+//   text-shadow: 1px 1px 3px rgba($pink, .5);
+//   position: absolute;
+// }
+//
+// .right {
+//   position: absolute;
+//   left: 350px;
+// }
+// .right2 {
+//   position: absolute;
+//   left: 362px;
+// }
+//
+// .section--title {
+//   color: $white;
+//   text-shadow: 1px 1px 3px rgba($pink, .5);
+//   font-style: italic;
+//   font-size: 3.5em;
+//   margin-top: -290px;
+//   margin-left: 360px;
+//   position: absolute;
+//   span {
+//     background-color: rgba($pink, 0.5);
+//   }
+// }
+// .section--title_left {
+//   color: $white;
+//   text-shadow: 1px 1px 3px rgba($pink, .5);
+//   font-style: italic;
+//   font-size: 3.5em;
+//   margin-top: -290px;
+//   left: -265px;
+//   position: absolute;
+//   span {
+//     background-color: rgba($gray, 0.5);
+//   }
+// }
 
 .quote {
   position: relative;
@@ -308,8 +373,6 @@ button {
     box-shadow: 1px 1px 3px rgba($pink, .5);
   }
   h3 {
-    font-size: 2.5em;
-    color: $white;
     padding-top: 10%;
     padding-left: 10%;
     text-shadow: 1px 1px 3px rgba($pink, .5);
