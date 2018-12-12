@@ -198,6 +198,9 @@ button {
   background-size: cover;
   background-position: center;
   background-attachment: fixed; }
+  @media (max-width: 500px) {
+    .quote {
+      background-attachment: scroll; } }
 
 .overlay {
   background-color: rgba(22, 22, 14, 0.3);
@@ -333,8 +336,7 @@ footer {
   /* start of phone styles */
   .section {
     display: block;
-    margin: 25% auto;
-    height: 100%; }
+    margin: 25% auto; }
   .section-box {
     margin-left: 10%;
     margin-top: 15px;
@@ -358,6 +360,6 @@ footer {
     height: auto; }
   .overlay h3 {
     margin-top: 20%;
-    font-size: 2em; }
+    font-size: 1.5em; }
   .footer-text p {
-    font-size: 8px; } }
+    font-size: 7px; } }
