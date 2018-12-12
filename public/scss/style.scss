@@ -76,6 +76,7 @@ button {
   width: 100%;
   height: 80px;
   z-index: 10;
+  box-shadow: 1px 1px 2px rgba($dark, .2);
 }
 
 .logo {
@@ -88,6 +89,10 @@ button {
 }
 
 .navbar {
+  display: none;
+}
+
+.navbar-full {
   list-style-type: none;
   text-align: center;
   margin-top: 30px;
@@ -95,17 +100,18 @@ button {
     display: inline;
     padding: 25px;
     text-transform: uppercase;
-    font-size: 10px;
     letter-spacing: 3px;
   }
   a {
-    transition: $ease;
+    transition: all .3s ease-in;
     padding: 5px;
+    font-size: 10px;
     &:hover {
       color: $light;
       background: $pink;
       padding: 5px;
       transition: $ease;
+      font-size: 11px;
     }
   }
 }
@@ -215,36 +221,17 @@ button {
     font-size: 1.1em;
   }
   &:hover {
-    background-color: $pink;
     transform: scale(1.02);
     h5 {
-      color: $light;
+      color: $pink;
     }
   }
   img {
     transition: $ease;
+    max-width: 100%;
+    max-height: 100%;
     &:hover {
       opacity: .7;
-    }
-  }
-}
-
-.section-bottom {
-  position: absolute;
-  margin-top: -235px;
-  right: 10%;
-  height: 30px;
-  h3 {
-    margin: 0;
-    color: $pink;
-    font-family: $cursive;
-    opacity: .7;
-    font-size: 3.5em;
-    text-shadow: 1px 1px 1px rgba($pink, .1);
-    transition: $ease;
-    &:hover {
-      color: $white;
-      transition: $ease;
     }
   }
 }
@@ -419,6 +406,160 @@ footer {
     background: rgba($pink, .7);
     &:hover {
       background: rgba($light, .7);
+    }
+  }
+}
+
+
+/* start of mobile screen styles */
+
+@media screen and (max-width: 991px) {
+/* start of large tablet styles */
+  .section-container {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
+
+@media screen and (max-width: 897px) {
+/* start of medium tablet styles */
+}
+
+@media screen and (max-width: 747px) {
+/* start of small tablet styles */
+  .section-box {
+    height: 40%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+/* hide main top nav bar */
+  .topbar {
+    display: none;
+  }
+  // hamburger menu & navigation bar
+  #menu {
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    padding: 8px;
+    top: 1em;
+    right: 0;
+    -webkit-transition: all .7s ease;
+    transition: all .7s ease;
+    z-index: 3;
+    &.open {
+      .top {
+        background: darken($white,10%);
+        transform: translateY(8px) rotateZ(45deg);
+      }
+      .middle {
+        opacity: 0;
+      }
+      .bottom {
+        background: darken($white,10%);
+        transform: translateY(-8px) rotateZ(-45deg);
+      }
+    }
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s, visibility .1s;
+    a {
+      text-transform: uppercase;
+      font-size: 10px;
+      padding: 3px;
+      letter-spacing: 3px;
+      &:hover {
+        font-size: 11px;
+        background-color: $white;
+      }
+    }
+    &.show {
+      opacity: 1;
+      visibility: visible;
+      z-index: 3;
+    }
+  }
+  .navbar {
+    display: block;
+    list-style-type: none;
+    text-align: right;
+    right: 25px;
+    top: 70px;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: 5px 10px;
+    }
+  }
+
+  .bar {
+    display: block;
+    height: 4px;
+    width: 25px;
+    background: darken($white,10%);
+    margin: 4px auto;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+  }
+}
+
+@media screen and (max-width: 594px) {
+/* start of phone styles */
+  .section {
+    display: block;
+    margin: 25% auto;
+    height: 100%;
+  }
+  .section-box {
+    margin-left: 10%;
+    margin-top: 15px;
+    width: 80%;
+    height: 300px;
+    &:hover {
+      h5 {
+        color: $light;
+      }
+      span {
+        background: $pink;
+      }
+    }
+    img {
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  .section-title {
+    position: absolute;
+    margin-left: 20px;
+    span {
+      background: $light;
+      &:hover {
+        background-color: $pink;
+      }
+    }
+  }
+  .section-img {
+    width: 315px;
+    height: auto;
+  }
+
+  .overlay {
+    h3 {
+      margin-top: 20%;
+      font-size: 2em;
+    }
+  }
+  .footer-text {
+    p {
+      font-size: 8px;
     }
   }
 }
