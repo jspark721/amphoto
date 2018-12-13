@@ -13,10 +13,3 @@ function toggleMenu() {
 }
 
 menu.onclick = toggleMenu;
-
-// mobile viewport function
-
-if ($('body').hasClass('mobile')) {
-  var viewportHeight = $('.quote').outerHeight();
-  $('.quote').css({ height: window.innerHeight });
-}
