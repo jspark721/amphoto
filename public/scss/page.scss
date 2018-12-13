@@ -5,13 +5,24 @@
   height: 400px;
 }
 
-.about {
+.btn-light {
+  background: $light;
+  border: 1px solid rgba($dark, .4);
+  &:hover {
+    border: 1px solid rgba($dark, 0);
+  }
+}
+
+.page {
   width: 100%;
   background: url('../img/page-header.jpg')no-repeat fixed;
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
   background-size: contain;
+}
+.hidden {
+  opacity: 0;
 }
 
 .header-titlebox {
@@ -20,7 +31,7 @@
   top: 325px;
   background: rgba($pink, .75);
   height: 80px;
-  width: 320px;
+  width: 330px;
   padding: 10px;
   text-align: center;
   p {
@@ -40,7 +51,7 @@
   height: 80vh;
 }
 
-.about-container {
+.page-container {
   position: relative;
   width: 80%;
   max-width: 980px;
@@ -49,7 +60,7 @@
 }
 
 .about-img {
-  width: 340px;
+  width: 345px;
   height: 450px;
   border: 1px solid $pink;
   top: 95px;
@@ -59,7 +70,7 @@
 .about-desc {
   right: 0;
   top: 95px;
-  width: 55%;
+  width: 50%;
   position: absolute;
   h3 {
     color: $gray;
