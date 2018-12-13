@@ -1,19 +1,4 @@
-$white: #FFFFFF;
-$light: #FAF5F0;
-$tan: #C9BEB4;
-$pink: #D5C1BE;
-$gray: #B5B5C0;
-$brown: #836B67;
-$teal: #324651;
-$dark: #16160E;
-
-@import url('https://fonts.googleapis.com/css?family=Lora|Parisienne|Cormorant+Garamond');
-
-$serif: 'Lora', serif;
-$body: 'Cormorant Garamond', serif;
-$cursive: 'Parisienne', cursive;
-
-$ease: all .5s ease;
+@import 'variables';
 
 html, body {
   margin: 0;
