@@ -274,7 +274,7 @@ footer {
 
 @media only screen and (max-width: 700px) {
   /* hide main top nav bar */
-  .topbar {
+  .topbar, .topbar-page {
     display: none; }
   #menu {
     position: fixed;
