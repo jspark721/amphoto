@@ -11,6 +11,21 @@ a {
   color: #16160E;
   transition: all 0.5s ease; }
 
+p {
+  color: #353522;
+  font-size: .5em;
+  line-height: 1.5em;
+  letter-spacing: 3px;
+  text-transform: uppercase; }
+
+h2 {
+  letter-spacing: 10px;
+  font-weight: 100;
+  font-family: "Cormorant Garamond", serif;
+  color: #FAF5F0;
+  text-transform: uppercase;
+  font-size: 1.5em; }
+
 h3 {
   font-size: 2.5em;
   color: #FFFFFF; }
@@ -107,13 +122,7 @@ button {
     letter-spacing: 9px; }
   .title h2 {
     text-align: center;
-    margin-top: -40px;
-    letter-spacing: 10px;
-    font-weight: 100;
-    font-family: "Cormorant Garamond", serif;
-    color: #FAF5F0;
-    text-transform: uppercase;
-    font-size: 1.5em; }
+    margin-top: -40px; }
 
 .bio {
   width: 100%;
@@ -228,14 +237,14 @@ footer {
   margin-top: -20px;
   margin-bottom: 0;
   width: 100%;
-  height: 35vh;
+  height: 200px;
   text-align: center; }
 
 .footer-social {
   display: block;
   margin: 0 auto; }
   .footer-social i {
-    margin-top: 75px;
+    margin-top: 40px;
     padding: 35px;
     color: #dedee3; }
     .footer-social i:hover {
@@ -243,13 +252,8 @@ footer {
       transition: all 0.5s ease; }
 
 .footer-text {
-  padding-top: 105px; }
+  margin-top: 30px; }
   .footer-text p {
-    color: #16160E;
-    font-size: .5em;
-    line-height: 1.5em;
-    letter-spacing: 3px;
-    text-transform: uppercase;
     vertical-align: bottom;
     margin-bottom: 0; }
   .footer-text a {
@@ -267,12 +271,7 @@ footer {
 @media only screen and (max-width: 897px) {
   /* start of medium tablet styles */ }
 
-@media only screen and (max-width: 747px) {
-  /* start of small tablet styles */
-  .section-box {
-    height: 40%; } }
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 777px) {
   /* hide main top nav bar */
   .topbar, .topbar-page {
     display: none; }
@@ -330,7 +329,9 @@ footer {
     background: #e6e6e6;
     margin: 4px auto;
     -webkit-transition: all .5s ease;
-    transition: all .5s ease; } }
+    transition: all .5s ease; }
+  .section-box {
+    height: 40%; } }
 
 @media only screen and (max-width: 594px) {
   /* start of phone styles */

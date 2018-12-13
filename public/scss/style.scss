@@ -14,6 +14,23 @@ a {
   transition: $ease;
 }
 
+p {
+  color: lighten($dark, 10%);
+  font-size: .5em;
+  line-height: 1.5em;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h2 {
+  letter-spacing: 10px;
+  font-weight: 100;
+  font-family: $body;
+  color: $light;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
 h3 {
   font-size: 2.5em;
   color: $white;
@@ -124,12 +141,6 @@ button {
   h2 {
     text-align: center;
     margin-top: -40px;
-    letter-spacing: 10px;
-    font-weight: 100;
-    font-family: $body;
-    color: $light;
-    text-transform: uppercase;
-    font-size: 1.5em;
   }
 }
 
@@ -361,7 +372,7 @@ footer {
   margin-top: -20px;
   margin-bottom: 0;
   width: 100%;
-  height: 35vh;
+  height: 200px;
   text-align: center;
 }
 
@@ -369,7 +380,7 @@ footer {
   display: block;
   margin: 0 auto;
   i {
-    margin-top: 75px;
+    margin-top: 40px;
     padding: 35px;
     color: lighten($gray, 15%);
     &:hover {
@@ -380,13 +391,8 @@ footer {
 }
 
 .footer-text {
-  padding-top: 105px;
+  margin-top: 30px;
   p {
-    color: $dark;
-    font-size: .5em;
-    line-height: 1.5em;
-    letter-spacing: 3px;
-    text-transform: uppercase;
     vertical-align: bottom;
     margin-bottom: 0;
   }
@@ -413,14 +419,7 @@ footer {
 /* start of medium tablet styles */
 }
 
-@media only screen and (max-width: 747px) {
-/* start of small tablet styles */
-  .section-box {
-    height: 40%;
-  }
-}
-
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 777px) {
 /* hide main top nav bar */
   .topbar, .topbar-page {
     display: none;
@@ -495,6 +494,9 @@ footer {
     margin: 4px auto;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
+  }
+  .section-box {
+    height: 40%;
   }
 }
 
