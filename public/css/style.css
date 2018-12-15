@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Lora|Parisienne|Cormorant+Garamond");
+@font-face {
+  font-family: "Modena";
+  src: url("../fonts/ModenaScript-Regular.woff") format("woff"); }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -22,8 +26,8 @@ h2 {
   letter-spacing: 10px;
   font-weight: 100;
   font-family: "Cormorant Garamond", serif;
-  color: #FAF5F0;
   text-transform: uppercase;
+  color: #FAF5F0;
   font-size: 1.5em; }
 
 h3 {
@@ -116,13 +120,15 @@ button {
   top: 35vh;
   width: 100%; }
   .title h1 {
+    margin-top: -20px;
+    margin-bottom: 0;
+    font-family: "Modena", cursive;
     text-align: center;
-    font-size: 3.5em;
-    color: #FAF5F0;
-    letter-spacing: 9px; }
+    font-size: 4.5em;
+    color: #FAF5F0; }
   .title h2 {
     text-align: center;
-    margin-top: -40px; }
+    margin-top: -60px; }
 
 .bio {
   width: 100%;
@@ -208,6 +214,11 @@ button {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; }
+  .quote h3 {
+    margin-top: 50px;
+    line-height: 1.3em; }
+  .quote span {
+    font-family: "Modena", cursive; }
 
 .overlay {
   background-color: rgba(22, 22, 14, 0.3);

@@ -1,5 +1,10 @@
 @import 'variables';
 
+@font-face {
+  font-family: "Modena";
+  src: url('../fonts/ModenaScript-Regular.woff') format('woff');
+}
+
 html, body {
   margin: 0;
   padding: 0;
@@ -26,8 +31,8 @@ h2 {
   letter-spacing: 10px;
   font-weight: 100;
   font-family: $body;
-  color: $light;
   text-transform: uppercase;
+  color: $light;
   font-size: 1.5em;
 }
 
@@ -133,14 +138,16 @@ button {
   top: 35vh;
   width: 100%;
   h1 {
+    margin-top: -20px;
+    margin-bottom: 0;
+    font-family: $cursive;
     text-align: center;
-    font-size: 3.5em;
+    font-size: 4.5em;
     color: $light;
-    letter-spacing: 9px;
   }
   h2 {
     text-align: center;
-    margin-top: -40px;
+    margin-top: -60px;
   }
 }
 
@@ -232,103 +239,6 @@ button {
   }
 }
 
-// .section {
-//   margin-top: 13%;
-//   background: $light;
-//   height: 180vh;
-// }
-//
-// .section--box {
-//   width: 450px;
-//   height: 450px;
-//   border: 1px solid rgba($white, .5);
-// }
-//
-// .section--img {
-//   position: relative;
-//   overflow: hidden;
-//   margin: 0 auto;
-//   width: 450px;
-//   height: 450px;
-//   img {
-//     position: absolute;
-//     transition: $ease;
-//     &:hover {
-//       transform: scale(1.1);
-//       transition: $ease;
-//     }
-//   }
-// }
-//
-// .section-one {
-//   position: absolute;
-//   left: 10%;
-//   width: 50%;
-// }
-//
-// .section-two {
-//   position: absolute;
-//   right: 10%;
-//   width: 50%;
-//   .section--box {
-//     position: absolute;
-//     right: 0;
-//     top: 400px;
-//   }
-// }
-// .section-three {
-//   position: absolute;
-//   left: 10%;
-//   width: 50%;
-//   .section--box {
-//     position: absolute;
-//     top: 800px;
-//   }
-// }
-//
-//
-// .num {
-//   font-size: 4em;
-//   color: $white;
-//   top: 50px;
-//   text-shadow: 1px 1px 3px rgba($pink, .5);
-//   position: absolute;
-// }
-//
-// .right {
-//   position: absolute;
-//   left: 350px;
-// }
-// .right2 {
-//   position: absolute;
-//   left: 362px;
-// }
-//
-// .section--title {
-//   color: $white;
-//   text-shadow: 1px 1px 3px rgba($pink, .5);
-//   font-style: italic;
-//   font-size: 3.5em;
-//   margin-top: -290px;
-//   margin-left: 360px;
-//   position: absolute;
-//   span {
-//     background-color: rgba($pink, 0.5);
-//   }
-// }
-// .section--title_left {
-//   color: $white;
-//   text-shadow: 1px 1px 3px rgba($pink, .5);
-//   font-style: italic;
-//   font-size: 3.5em;
-//   margin-top: -290px;
-//   left: -265px;
-//   position: absolute;
-//   span {
-//     background-color: rgba($gray, 0.5);
-//   }
-// }
-
 .quote {
   position: relative;
   width: 100%;
@@ -338,6 +248,13 @@ button {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  h3 {
+    margin-top: 50px;
+    line-height: 1.3em;
+  }
+  span {
+    font-family: $cursive;
+  }
 }
 
 .overlay {

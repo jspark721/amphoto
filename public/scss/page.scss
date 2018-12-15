@@ -63,8 +63,9 @@
 .about-img {
   width: 345px;
   height: 450px;
-  border: 1px solid $pink;
+  background: url('../img/ariel.jpg') no-repeat;
   top: 95px;
+  background-size: cover;
   position: absolute;
 }
 
@@ -83,20 +84,31 @@
   width: 50%;
   position: absolute;
   h3 {
+    margin-top: -15px;
     color: $gray;
-    margin-bottom: 0;
-    span {
-      font-size: 10px;
-    }
+    margin-bottom: -30px;
   }
   p {
     text-transform: none;
     letter-spacing: 0px;
-    line-height: 1.5em;
+    line-height: 1.7em;
     font-size: 1em;
     color: lighten($dark, 15%);
     font-family: $body;
   }
+}
+
+.align-right {
+  text-align: right;
+  h3 {
+    color: $pink;
+    margin-top: -30px;
+    margin-right: 25px;
+  }
+}
+
+.cursive {
+  font-family: $cursive;
 }
 
 /*gallery index page style*/
