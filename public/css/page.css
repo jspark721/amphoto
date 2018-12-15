@@ -7,6 +7,7 @@
   background: #FAF5F0;
   border: 1px solid rgba(22, 22, 14, 0.4); }
   .btn-light:hover {
+    background: #D5C1BE;
     border: 1px solid rgba(22, 22, 14, 0); }
 
 .page {

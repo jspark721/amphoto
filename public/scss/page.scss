@@ -9,6 +9,7 @@
   background: $light;
   border: 1px solid rgba($dark, .4);
   &:hover {
+    background: $pink;
     border: 1px solid rgba($dark, 0);
   }
 }
