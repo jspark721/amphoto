@@ -94,53 +94,109 @@
   font-family: "Modena", cursive; }
 
 /*gallery index page style*/
+section {
+  margin-top: 80px;
+  width: 100%;
+  height: auto; }
+
 .gallery-container {
-  width: 80%;
-  height: 100vh;
-  margin: 0 auto; }
+  position: relative;
+  height: 400px; }
 
-.gallery-title {
+.gallery-topleft {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  left: 0;
+  background: #D5C1BE;
   text-align: center; }
-  .gallery-title h1 {
-    margin-top: 15%;
-    font-family: "Modena", cursive; }
+  .gallery-topleft h1 {
+    color: #FAF5F0;
+    font-size: 2.5em;
+    margin-left: 20px;
+    margin-bottom: 0; }
+  .gallery-topleft p {
+    font-size: 1em;
+    font-style: italic;
+    text-transform: lowercase;
+    font-weight: 100;
+    font-family: "Cormorant Garamond", serif; }
+  .gallery-topleft i {
+    color: #FAF5F0;
+    margin-top: 30px;
+    font-size: 1.4em; }
 
-.gallery {
+.gallery-line {
+  width: 50px;
+  background: #FAF5F0;
+  height: 3px;
+  margin: 15px auto 35px auto; }
+
+.gallery-topright {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0; }
+  .gallery-topright img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden; }
+
+.gallery-list {
+  margin: 10% auto;
+  text-align: center;
+  width: 100%; }
+  .gallery-list p {
+    margin-top: -50px;
+    margin: 0;
+    font-size: .7em; }
+  .gallery-list h3 {
+    color: #e9dfdd;
+    text-transform: lowercase;
+    line-height: 0;
+    margin-bottom: 0; }
+
+.gallery-columns {
+  margin: 5% 3%;
   display: grid;
   grid-gap: 15px;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: minmax(100px, auto); }
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
-.gallery-item-one {
-  border: 1px solid #D5C1BE;
-  grid-column: 1 / 3;
-  grid-row: 1 / 4;
-  background: url("../img/weddings.jpg") no-repeat;
-  background-size: cover; }
+.gallery-item {
+  position: relative;
+  transition: all 0.5s ease;
+  text-align: center; }
+  .gallery-item:hover {
+    background: #FAF5F0;
+    cursor: pointer; }
+    .gallery-item:hover .gallery-title {
+      opacity: 1; }
+    .gallery-item:hover .gallery-img {
+      opacity: .5;
+      border-bottom: 5px solid #D5C1BE;
+      transform: scale(1.05); }
 
-.gallery-item-two {
-  border: 1px solid #D5C1BE;
-  grid-column: 3 / 4;
-  grid-row: 1 / 3;
-  background: url("../img/engagements.jpg") no-repeat;
-  background-size: cover; }
+.gallery-img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.5s ease;
+  border-bottom: 5px solid #FAF5F0; }
 
-.gallery-item-three {
-  border: 1px solid #D5C1BE;
-  grid-column: 1 / 3;
-  grid-row: 4 / 6;
-  background: url("../img/page-header.jpg") no-repeat;
-  background-size: cover; }
+.gallery-title {
+  position: absolute;
+  font-size: 2.3em;
+  left: 20px;
+  bottom: 0;
+  opacity: 0;
+  transition: all 0.5s ease; }
 
-.gallery-item-four {
-  border: 1px solid #D5C1BE;
-  grid-column: 3 / 4;
-  grid-row: 3 / 6;
-  background: url("../img/header.jpg") no-repeat;
-  background-size: cover; }
-
-.rotate {
-  transform: rotate(90deg); }
+.gallery-ctabox {
+  width: 100%;
+  height: 200px;
+  margin: 0;
+  text-align: center; }
 
 @media only screen and (max-width: 777px) {
   .header {
