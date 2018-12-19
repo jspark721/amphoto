@@ -95,12 +95,12 @@
 .cursive {
   font-family: "Modena", cursive; }
 
-/*gallery index page style*/
 section {
   margin-top: 80px;
   width: 100%;
   height: auto; }
 
+/*gallery index page style*/
 .gallery-container {
   position: relative;
   height: 400px; }
@@ -200,6 +200,7 @@ section {
   margin: 0;
   text-align: center; }
 
+/* blog index page style */
 @media only screen and (max-width: 777px) {
   .header {
     height: 200px; } }
