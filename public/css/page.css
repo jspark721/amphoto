@@ -11,6 +11,7 @@
     border: 1px solid rgba(22, 22, 14, 0); }
 
 .page {
+  position: relative;
   margin-top: 80px;
   width: 100%;
   background: url("../img/page-header.jpg") no-repeat fixed;
@@ -24,23 +25,22 @@
 
 .header-titlebox {
   position: absolute;
-  left: 10%;
-  top: 405px;
-  background: rgba(213, 193, 190, 0.75);
+  top: 35%;
+  left: 35%;
+  background: rgba(213, 193, 190, 0.9);
   height: 80px;
-  width: 330px;
+  width: 30%;
+  max-width: 400px;
   padding: 10px;
   text-align: center; }
-  .header-titlebox p {
-    margin-top: 15px;
-    margin-bottom: 0; }
   .header-titlebox .header-title {
     margin-top: -5px;
     color: #3b3b26;
     font-style: italic;
-    font-size: 2.1em; }
+    font-size: 1.5em; }
 
 .page-main {
+  position: relative;
   margin: 0;
   width: 100%;
   height: 90vh; }
@@ -50,7 +50,8 @@
   width: 80%;
   max-width: 980px;
   height: 100%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  transition: all 0.5s ease; }
 
 .about-img {
   width: 345px;
@@ -81,7 +82,7 @@
     text-transform: none;
     letter-spacing: 0px;
     line-height: 1.7em;
-    font-size: 1em;
+    font-size: 1.1em;
     color: #45452c;
     font-family: "Cormorant Garamond", serif; }
 
@@ -160,7 +161,7 @@ section {
     margin-bottom: 0; }
 
 .gallery-columns {
-  margin: 5% 3%;
+  margin: 7% 3%;
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
@@ -201,6 +202,68 @@ section {
   text-align: center; }
 
 /* blog index page style */
+@media only screen and (min-width: 830px) and (max-width: 1111px) {
+  .gallery-columns {
+    margin: 5% 10%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (min-width: 1000px) {
+  .page {
+    background-size: cover 400px; } }
+
+@media only screen and (max-width: 991px) {
+  .page-container {
+    width: 90%; } }
+
+@media only screen and (max-width: 900px) {
+  .page-container {
+    margin-top: -50px; } }
+
 @media only screen and (max-width: 777px) {
+  .page-main {
+    height: 90vh; }
+  .page {
+    margin-top: 0; }
+  .page-container {
+    width: 100%; }
+  .header-titlebox {
+    width: 40%;
+    left: 30%; }
+  .about-img, .investment-img {
+    margin: 0; } }
+
+@media only screen and (max-width: 694px) {
+  .page-main {
+    height: 120vh; }
+  .header-titlebox {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+    top: 76.5%; }
+  .about-img, .investment-img {
+    width: 90%;
+    background-position: center;
+    left: 5%; }
+  .about-desc {
+    height: 80%;
+    top: 48%;
+    width: 90%;
+    left: 5%; } }
+
+@media only screen and (max-width: 620px) {
   .header {
-    height: 200px; } }
+    height: 350px; } }
+
+@media only screen and (max-width: 530px) {
+  .header {
+    height: 300px; }
+  .page-main {
+    height: 140vh; } }
+
+@media only screen and (max-width: 435px) {
+  .header {
+    height: 250px; }
+  .page-main {
+    height: 140vh; } }
