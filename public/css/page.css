@@ -160,7 +160,7 @@ section {
     margin-bottom: 0; }
 
 .gallery-columns {
-  margin: 5% 3%;
+  margin: 7% 3%;
   display: grid;
   grid-gap: 15px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
@@ -201,6 +201,14 @@ section {
   text-align: center; }
 
 /* blog index page style */
+@media only screen and (min-width: 830px) and (max-width: 1111px) {
+  /* fix css grid gallery */
+  .gallery-columns {
+    margin: 5% 10%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr; } }
+
 @media only screen and (max-width: 777px) {
   .header {
     height: 200px; } }
