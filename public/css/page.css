@@ -203,6 +203,14 @@ section {
 
 /* blog index page style */
 @media only screen and (min-width: 830px) and (max-width: 1111px) {
+  /* fix css grid gallery */
+  .gallery-columns {
+    margin: 5% 10%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr; } }
+
+@media only screen and (min-width: 830px) and (max-width: 1111px) {
   .gallery-columns {
     margin: 5% 10%;
     display: grid;
