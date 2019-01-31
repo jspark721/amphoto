@@ -9,7 +9,7 @@
     <h1 class="cursive"><?php echo get_the_title(); ?></h1>
   </div>
   <div class="gallery-line"></div>
-  <a class="gallery-link" href="<?php bloginfo('url') ?>/gallery/">back to gallery</a>
+  <a class="gallery-link" href="<?php bloginfo('url') ?>/blog/">back to index</a>
 </div>
 
     <?php
