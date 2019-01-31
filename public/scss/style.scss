@@ -380,6 +380,10 @@ footer {
   }
 }
 
+.flex {
+  display: flex;
+}
+
 .main-blog {
   position: relative;
   width: 100%;
@@ -388,41 +392,55 @@ footer {
 
 .blog-posts {
   position: relative;
-  margin: 50px;
+  width: 80%;
+  max-width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  transition: all 0.5s ease;
 }
 
 .blog-img {
   position: absolute;
   width: 350px;
-  height: 450px;
+  height: 350px;
   overflow: hidden;
-  border: 1px solid $brown;
   img {
     max-width: 400px;
     position: absolute;
     left: 50%;
     margin-left: -225px;
+    bottom: -30%;
   }
 }
 
 .blog-summary {
   position: absolute;
-  width: 50%;
-  right: 0;
+  width: 400px;
+  left: 420px;
+  height: 350px;
 }
 
 .blog-title {
   h3 {
+    margin: 0;
     color: $pink;
     font-weight: 100;
     letter-spacing: -1px;
   }
 }
+
+.blog-tags {
+  position: absolute;
+  bottom: 0;
+}
+
 /*blog small styling changes*/
 .summary {
   text-transform: none;
   letter-spacing: 1px;
   font-size: 12px;
+  line-height: 1.6em;
+  margin-bottom: 25px;
 }
 .btn-sm {
   padding: 5px;
