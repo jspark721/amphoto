@@ -278,11 +278,12 @@ footer {
   width: 100%;
   height: 400px;
   margin-top: 80px;
-  position: relative; }
+  position: relative;
+  background: rgba(213, 193, 190, 0.5); }
   .header-blog h1 {
     font-family: "Modena", cursive;
-    color: #B5B5C0;
-    font-size: 4em;
+    color: #917773;
+    font-size: 4.5em;
     padding-top: 65px;
     text-align: center; }
 
@@ -330,10 +331,10 @@ footer {
 
 .blog-posts {
   position: absolute;
-  width: 70%;
+  width: 72%;
+  height: 490px;
   max-width: 980px;
-  height: 100%;
-  left: 15%;
+  right: 15%;
   top: 10%;
   transition: all 0.5s ease; }
 
@@ -341,7 +342,6 @@ footer {
   position: absolute;
   width: 350px;
   height: 425px;
-  left: 50px;
   overflow: hidden; }
   .blog-img img {
     max-width: 400px;
@@ -350,15 +350,23 @@ footer {
     bottom: -10%;
     margin-left: -225px; }
 
+.blog-date {
+  transform: rotate(-90deg);
+  color: #B5B5C0;
+  position: absolute;
+  left: -40px; }
+  .blog-date h4 {
+    font-family: "Lora", serif;
+    text-transform: uppercase; }
+
 .blog-summary {
   position: absolute;
   width: 60%;
-  left: 420px;
-  height: 350px;
+  left: 380px;
   text-align: center; }
 
 .blog-title h3 {
-  margin: 70px 20px 40px 20px;
+  margin: 50px 20px 40px 0px;
   color: #D5C1BE;
   font-size: 2em;
   line-height: 1em;
@@ -411,6 +419,12 @@ footer {
   .category-items li {
     padding-left: 10px; } }
 
+@media only screen and (max-width: 930px) {
+  .blog-title h3 {
+    margin: 30px 20px 20px 0px; }
+  .blog-summary {
+    width: 50%; } }
+
 @media only screen and (max-width: 885px) {
   .category-items {
     display: block;
@@ -419,9 +433,33 @@ footer {
   .header-category {
     padding-bottom: 10px; } }
 
+@media only screen and (max-width: 765px) {
+  .blog-posts {
+    width: 100%;
+    left: 2%; }
+  .blog-summary {
+    width: 40%;
+    text-align: left; }
+  .line-break {
+    margin-left: 5px; }
+  .blog-tags {
+    margin-top: 40px; }
+  .blog-date {
+    transform: rotate(0deg);
+    left: 0;
+    border: 1px solid #B5B5C0;
+    padding: 5px; }
+    .blog-date h4 {
+      margin: 0;
+      font-size: 0.8em; } }
+
 @media only screen and (max-width: 625px) {
   .main-blog {
-    margin-top: 55px; } }
+    margin-top: 5px; }
+  .blog-img {
+    width: 320px; }
+  .blog-summary {
+    left: 350px; } }
 
 @media only screen and (max-width: 520px) {
   .main-blog {
@@ -439,7 +477,21 @@ footer {
         color: #836B67;
         cursor: pointer;
         border: 1px solid #836B67;
-        padding: 5px; } }
+        padding: 5px; }
+  .blog-img {
+    width: 100%;
+    left: 5%; }
+    .blog-img img {
+      opacity: .5; }
+  .blog-summary {
+    top: 5%;
+    width: 90%;
+    left: 5%;
+    text-align: center; }
+  .line-break {
+    margin-left: 45%; }
+  .tags:hover {
+    color: #FFFFFF; } }
 
 /* start of mobile screen styles */
 @media only screen and (max-width: 991px) {
