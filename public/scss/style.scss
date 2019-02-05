@@ -536,6 +536,7 @@ footer {
   .blog-date {
     transform: rotate(0deg);
     left: 0;
+    z-index: 5;
     border: 1px solid $gray;
     padding: 5px;
     h4 {
