@@ -56,7 +56,7 @@
 
   <div class="quote">
     <div class="overlay">
-      <h3>natural light, true tone,<br><span>& photojournalistic</span></h3>
+      <h3><span>inspired by natural light, colors<br>& your story.</span></h3>
       <div class="hr-line"></div>
       <div class="buttons">
         <a href="<?php bloginfo('url') ?>/about"><button class="btn-main">learn more</button></a>
