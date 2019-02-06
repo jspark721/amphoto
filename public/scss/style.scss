@@ -763,3 +763,9 @@ footer {
     }
   }
 }
+
+@media only screen and (max-width: 430px) {
+  .quote {
+    background: url("../img/header2-mobile.jpg") 0 0 / contain;
+  }
+}

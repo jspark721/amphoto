@@ -715,7 +715,7 @@ footer {
     width: 315px;
     height: auto; }
   .overlay h3 {
-    margin-top: 20%;
+    margin-top: 25%;
     font-size: 1.5em; }
   .footer-text p {
     font-size: 7px; } }
@@ -727,4 +727,16 @@ footer {
       top: 70%; }
   /* .page-main {
     height: 140vh; } */
+}
+
+@media only screen and (max-width: 430px) {
+  .hero {
+    background-attachment: scroll;
+  }
+  .title {
+    top: 30%;
+  }
+  .quote {
+    background-attachment: scroll;
+  }
 }
