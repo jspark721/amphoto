@@ -735,7 +735,7 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px; }
   .main-blog {
-    margin-top: 80px; }
+    margin-top: 280px; }
   .blog-posts {
     width: 100%;
     left: 2%; }
@@ -757,6 +757,8 @@ footer {
       font-size: 0.8em; } }
 
 @media only screen and (max-width: 625px) {
+  .main-blog {
+    margin-top: 100px; }
   .blog-img {
     width: 320px; }
   .blog-summary {
@@ -796,7 +798,7 @@ footer {
   .tags:hover {
     color: #FFFFFF; } }
 
-    
+
 
 /* start of mobile screen styles */
 

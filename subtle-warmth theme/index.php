@@ -6,7 +6,7 @@
 
 <div class="header">
   <div class="header-blog">
-    <h1><?php echo get_the_title(); ?></h1>
+    <h1>the blog</h1>
     <div class="header-category">
       <h2>browse by category</h2>
       <ul class="category-items">
@@ -24,7 +24,7 @@
   <div class="blog-posts">
     <div class="blog-date"><h4>jan 25</h4></div>
     <div class="blog-img">
-      <img src="../public/img/gallery-main.jpg" />
+      <img src="<?php bloginfo('template_url') ?>/img/gallery1.jpg" />
     </div>
     <div class="blog-summary">
       <div class="blog-title">
