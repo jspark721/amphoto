@@ -22,33 +22,33 @@
   </div>
 </div>
 
-<div class="main-blog">
-  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-  <div class="blog-posts">
-    <?php if (has_post_thumbnail()) : ?>
-    <div class="blog-date"><h4>jan 25</h4></div>
-    <div class="blog-img">
-        <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
-    </div>
-  <?php else : ?>
-
-  <?php endif; ?>
-    <div class="blog-summary">
-      <div class="blog-title">
-        <h3><a href="<?php the_permalink(); ?>" class="category-title-link"><?php the_title(); ?></a></h3>
-        <div class="line-break"></div>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  <div class="main-blog">
+    <div class="blog-posts">
+      <?php if (has_post_thumbnail()) : ?>
+      <div class="blog-date"><h4>jan 25</h4></div>
+      <div class="blog-img">
+          <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail(); ?></a>
       </div>
-      <div class="blog-content">
-        <p><?php the_excerpt(); ?> </p>
-        <button class="btn-main btn-sm btn-light"><a href="<?php the_permalink(); ?>">Read More</a></button>
-        <div class="blog-tags">
-          <p>filed in:<a><?php the_category('  ,  '); ?></a></p>
+    <?php else : ?>
+
+    <?php endif; ?>
+      <div class="blog-summary">
+        <div class="blog-title">
+          <h3><a href="<?php the_permalink(); ?>" class="category-title-link"><?php the_title(); ?></a></h3>
+          <div class="line-break"></div>
+        </div>
+        <div class="blog-content">
+          <p><?php the_excerpt(); ?> </p>
+          <button class="btn-main btn-sm btn-light"><a href="<?php the_permalink(); ?>">Read More</a></button>
+          <div class="blog-tags">
+            <p>filed in:<a><?php the_category('  ,  '); ?></a></p>
+          </div>
         </div>
       </div>
     </div>
+    <div class="blog-break-line"></div>
   </div>
-  <div class="blog-break-line"></div>
-</div>
 <?php endwhile; ?>
 
 <?php else : ?>
