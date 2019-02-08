@@ -680,20 +680,21 @@ footer {
 .blog-tags {
   margin-top: 70px; }
 
-.tags {
+.blog-tags a{
   font-family: "Modena", cursive;
   color: #836B67;
   letter-spacing: 0;
-  text-transform: none;
+  text-transform: lowercase;
   font-style: normal;
-  font-size: 25px;
+  font-size: 20px;
+  padding: 0 5px;
   cursor: pointer; }
-  .tags:hover {
+  .blog-tags a:hover {
     color: #D5C1BE;
     text-decoration: underline; }
 
 /*blog small styling changes*/
-.summary {
+.blog-content p {
   text-transform: none;
   letter-spacing: 1px;
   font-size: 12px;
