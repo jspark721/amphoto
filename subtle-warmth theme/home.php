@@ -43,7 +43,7 @@
             <p><?php the_excerpt(); ?> </p>
             <button class="btn-main btn-sm btn-light"><a href="<?php the_permalink(); ?>">Read More</a></button>
             <div class="blog-tags">
-              <p>filed in:<a><?php the_category('  ,  '); ?></a></p>
+              <p><span>filed in:</span><a><?php the_category('  ,  '); ?></a></p>
             </div>
           </div>
         </div>
