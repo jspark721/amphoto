@@ -620,10 +620,15 @@ footer {
         border: 1px solid #836B67;
         padding: 5px; }
 
+.container {
+  margin-top: 0;
+}
+
 .main-blog {
   position: relative;
   width: 100%;
-  min-height: 100vh; }
+  min-height: 500px;
+  margin: 2% auto 150px auto; }
 
 .blog-posts {
   position: absolute;
@@ -640,11 +645,7 @@ footer {
   height: 425px;
   overflow: hidden; }
   .blog-img img {
-    max-width: 400px;
-    position: absolute;
-    left: 50%;
-    bottom: -10%;
-    margin-left: -225px; }
+    position: absolute; }
 
 .blog-date {
   transform: rotate(-90deg);
@@ -712,6 +713,7 @@ footer {
   padding: 10px;
   font-size: .6em; }
 
+
 @media only screen and (max-width: 1040px) {
   .category-items li {
     padding-left: 10px; } }
@@ -735,8 +737,9 @@ footer {
     margin-top: -80px;
     padding-top: 50px;
     padding-bottom: 50px; }
-  .main-blog {
-    margin-top: 280px; }
+  .container {
+    margin-top: 330px;
+  }
   .blog-posts {
     width: 100%;
     left: 2%; }
@@ -752,22 +755,23 @@ footer {
     left: 0;
     z-index: 5;
     border: 1px solid #B5B5C0;
+    background: #FAF5F0;
     padding: 5px; }
     .blog-date h4 {
       margin: 0;
       font-size: 0.8em; } }
 
-@media only screen and (max-width: 625px) {
-  .main-blog {
-    margin-top: 100px; }
+@media only screen and (max-width: 620px) {
+  .container {
+    margin-top: 200px;
+  }
   .blog-img {
     width: 320px; }
   .blog-summary {
+    top: -30px;
     left: 350px; } }
 
 @media only screen and (max-width: 520px) {
-  .main-blog {
-    margin-top: 250px; }
   .header-category {
     padding-bottom: 0; }
   .category-items {
@@ -782,11 +786,18 @@ footer {
         cursor: pointer;
         border: 1px solid #836B67;
         padding: 5px; }
+
+  .container {
+    margin-top: 370px; }
+  .blog-title a {
+    background-color: rgba(250,245,240, .5);
+    padding: 10px;
+    line-height: 1.6em; }
   .blog-posts {
     top: 15%; }
   .blog-img {
     width: 100%;
-    left: 5%; }
+    left: 15%; }
     .blog-img img {
       opacity: .5; }
   .blog-summary {
@@ -895,7 +906,9 @@ footer {
     top: 10%;
     left: 30%; }
   .about-img, .investment-img {
-    margin: 0; } }
+    margin: 0; }
+  .container {
+    margin-top: 330px; }}
 
 @media only screen and (max-width: 694px) {
   /* .page-main {
