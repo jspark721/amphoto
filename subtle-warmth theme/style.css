@@ -648,13 +648,19 @@ footer {
     position: absolute; }
 
 .blog-date {
-  transform: rotate(-90deg);
-  color: #B5B5C0;
+  color: rgba(22, 22, 14, 0.4);
   position: absolute;
-  left: -40px; }
+  top: -10px;
+  z-index: 5;
+  border: 1px solid rgba(22, 22, 14, 0.4);
+  background: #FAF5F0;
+  padding: 5px; }
   .blog-date h4 {
     font-family: "Lora", serif;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin: 0;
+    letter-spacing: 2px;
+    font-size: 0.7em; }
 
 .blog-summary {
   position: absolute;
@@ -727,7 +733,9 @@ footer {
 
 @media only screen and (max-width: 1040px) {
   .category-items li {
-    padding-left: 10px; } }
+    padding-left: 10px; }
+  .blog-summary h3 {
+    margin: 5px 20px 20px 0px; } }
 
 @media only screen and (max-width: 991px) {
   /* start of large tablet styles */
@@ -738,8 +746,6 @@ footer {
     margin-right: 45px; } }
 
 @media only screen and (max-width: 930px) {
-  .blog-title h3 {
-    margin: 30px 20px 20px 0px; }
   .blog-summary {
     width: 50%; } }
 
@@ -854,19 +860,7 @@ footer {
   .line-break {
     margin-left: 5px; }
   .blog-tags {
-    margin-top: 40px; }
-  .blog-date {
-    transform: rotate(0deg);
-    color: rgba(22, 22, 14, 0.4);
-    left: 0;
-    z-index: 5;
-    border: 1px solid rgba(22, 22, 14, 0.4);
-    background: #FAF5F0;
-    padding: 5px; }
-    .blog-date h4 {
-      margin: 0;
-      letter-spacing: 2px;
-      font-size: 0.7em; } }
+    margin-top: 40px; } }
 
 @media only screen and (max-width: 694px) {
   /* .page-main {
@@ -955,8 +949,8 @@ footer {
         border: 1px solid #836B67;
         padding: 5px; }
   .main-blog {
-    margin: 2% auto 50px auto;
-  }
+    width: 100%;
+    margin: 2% auto 50px auto; }
   .container {
     margin-top: 370px; }
   .blog-title a {
@@ -990,6 +984,8 @@ footer {
     background-attachment: scroll;}
   .container {
     margin-left: -50px; }
+  .blog-posts {
+    left: 5%; }
   .blog-summary {
     width: 80%;
     left: 10%;}
@@ -999,5 +995,5 @@ footer {
   .blog-title {
     margin-left: 32px; }
   .blog-date {
-    left: 45%; }
+    left: 41%; }
 }

@@ -27,7 +27,7 @@
     <div class="main-blog">
       <div class="blog-posts">
         <?php if (has_post_thumbnail()) : ?>
-        <div class="blog-date"><h4>jan 25</h4></div>
+        <div class="blog-date"><h4><?php the_date(get_option('date_format')); ?></h4></div>
         <div class="blog-img">
           <?php the_post_thumbnail(); ?>
         </div>
@@ -55,12 +55,15 @@
 <?php else : ?>
 
 <article class="no-posts">
-
-    <h1>No posts were found.</h1>
-
+  <h1>No posts were found.</h1>
 </article>
 
 <?php endif; ?>
 
+<div class="blog-pagination">
+  <p class="pull-right"><?php previous_posts_link(__('Newer Posts »')); ?></p>
+
+  <p class="pull-left"><?php next_posts_link(__('« Older Posts')); ?></p>
+</div>
 
 <?php get_footer(); ?>
