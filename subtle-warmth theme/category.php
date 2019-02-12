@@ -1,17 +1,20 @@
 <?php
-/* Template for Blog Index Page */
+/* Template for Category Index Page */
 
   get_header();
 ?>
 
 <div class="header">
   <div class="header-blog">
-    <h1>the blog</h1>
+    <div class="category-title">
+      <p>Category</p>
+      <h2 class="cursive"><?php single_cat_title(); ?></h2>
+    </div>
     <div class="header-category">
-      <h2>browse by category</h2>
+      <h2>browse by categories</h2>
       <ul class="category-items">
         <li><a>weddings</a></li>
-        <li><a>engagements</a></li>
+        <li><a href="<?php get_category_by_slug( $engagements ); ?>">engagements</a></li>
         <li><a>styled shoots</a></li>
         <li><a>portraits</a></li>
         <li><a>other</a></li>
@@ -34,7 +37,7 @@
       <?php endif; ?>
         <div class="blog-summary">
           <div class="blog-title">
-            <h3><a href="<?php the_permalink(); ?>" class="category-title-link"><?php the_title(); ?></a></h3>
+            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <div class="line-break"></div>
           </div>
           <div class="blog-content">

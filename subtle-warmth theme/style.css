@@ -36,12 +36,10 @@ h2 {
   font-weight: 100;
   font-family: "Cormorant Garamond", serif;
   text-transform: uppercase;
-  color: #FAF5F0;
-  font-size: 1.5em; }
+  font-size: 2em; }
 
 h3 {
-  font-size: 2.5em;
-  color: #FFFFFF; }
+  font-size: 1.5em; }
 
 h4 {
   font-family: "Cormorant Garamond", serif;
@@ -55,6 +53,14 @@ h5 {
   letter-spacing: 3px;
   font-weight: 100;
   color: #16160E; }
+
+ul, ol {
+  list-style-position: inside;
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 2em;
+  letter-spacing: 1px;
+}
 
 
 button {
@@ -78,7 +84,6 @@ button {
   .btn-main:hover {
     background: #B5B5C0;
     transition: all 0.5s ease; }
-
 
 .topbar {
   background: #FAF5F0;
@@ -142,7 +147,9 @@ button {
     color: #FAF5F0; }
   .title h2 {
     text-align: center;
-    margin-top: -60px; }
+    margin-top: -60px;
+    color:#FAF5F0;
+    font-size: 1.5em; }
 
 .bio {
   width: 100%;
@@ -258,6 +265,8 @@ button {
   .overlay h3 {
     padding-top: 10%;
     padding-left: 10%;
+    color: #FAF5F0;
+    font-size: 2.5em;
     text-shadow: 1px 1px 3px rgba(213, 193, 190, 0.5); }
   .overlay .buttons {
     margin-left: 10%;
@@ -299,6 +308,12 @@ section {
   padding: 5px;
   transition: all 0.5s ease;
   font-size: 11px;
+}
+
+.gallery-button {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
 }
 
 /*gallery index page style*/
@@ -357,6 +372,7 @@ section {
     font-size: .7em; }
   .gallery-list h3 {
     color: #e9dfdd;
+    font-size: 2.5em;
     text-transform: lowercase;
     line-height: 0;
     margin-bottom: 0; }
@@ -404,6 +420,23 @@ section {
   height: 200px;
   margin: 0;
   text-align: center; }
+
+/* category index page style */
+
+.category-title {
+  padding-top: 80px; }
+  .category-title h2 {
+    text-align: center;
+    text-transform: none;
+    color: #836B67;
+    margin: 0;
+    letter-spacing: 0;
+    padding: 0;
+    font-size: 3em; }
+  .category-title p {
+    text-align: center;
+    margin: 0;
+    padding: 0; }
 
 /* wpform contact*/
 #wpforms-35 {
@@ -562,7 +595,9 @@ footer {
 
 .cursive {
   font-family: "Modena", cursive; }
-
+  .cursive h3 {
+    font-size: 2.3em;
+  }
 .nomargin {
   margin-top: -35px;
   color: #D5C1BE;
@@ -628,7 +663,7 @@ footer {
   position: relative;
   width: 100%;
   min-height: 500px;
-  margin: 2% auto 100px auto; }
+  margin: 2% auto 10px auto; }
 
 .blog-posts {
   position: absolute;
@@ -707,7 +742,7 @@ footer {
 
 .blog-pagination {
   width: 90%;
-  height: 50px;
+  height: 90px;
   margin: 0 5%; }
 
 .pull-right {
@@ -802,18 +837,26 @@ footer {
   margin: 0 auto 20px auto; }
 
 .post-feature-img {
+  position: relative;
   width: 70%;
   height: auto;
   margin: 20px auto 40px auto;
   overflow: hidden; }
   .post-feature-img img {
-    width: 100%; }
+    width: 100%;
+    height: auto; }
 
 .post-content {
   width: 70%;
   margin: 0 auto; }
   .post-content p {
-    text-align: justify; }
+    text-align: justify;
+    color: #16160E;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.6em;
+    margin-bottom: 35px; }
   .post-content .blog-tags {
     margin-top: 20px; }
 
@@ -944,6 +987,10 @@ footer {
     margin-top: 330px;
     margin-left: 55px;
   }
+  .gallery-page-container {
+    margin-top: -80px;
+    padding-top: 30px;
+    height: 380px; }
   .blog-posts {
     width: 100%;
     left: 2%; }
@@ -1046,8 +1093,7 @@ footer {
         border: 1px solid #836B67;
         padding: 5px; }
   .main-blog {
-    width: 100%;
-    margin: 2% auto 50px auto; }
+    width: 100%; }
   .container {
     margin-top: 370px; }
   .blog-title a {

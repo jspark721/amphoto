@@ -22,6 +22,9 @@
       }
     ?>
   </div>
+  <div class="gallery-button">
+    <a class="btn-main btn-sm btn-light" href="<?php bloginfo('url') ?>/gallery">back to top</a>
+  </div>
 </div>
 
 <?php get_footer(); ?>
