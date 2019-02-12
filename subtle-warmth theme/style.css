@@ -754,7 +754,7 @@ footer {
 .center {
   float: left;
   position: absolute;
-  left: 45%;
+  left: 47%;
 }
 
 .pull-right a:hover,
@@ -916,7 +916,9 @@ footer {
     margin: 5% 10%;
     display: grid;
     grid-gap: 20px;
-    grid-template-columns: 1fr 1fr; } }
+    grid-template-columns: 1fr 1fr; }
+  .center {
+    left: 45%; }}
 
 
 @media only screen and (max-width: 777px) {
@@ -1120,7 +1122,7 @@ footer {
     width: 90%;
     left: 3%; }
     .blog-img img {
-      opacity: .5; }
+      opacity: .3; }
   .blog-summary {
     top: 5%;
     width: 90%;
