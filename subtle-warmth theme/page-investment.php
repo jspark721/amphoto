@@ -14,14 +14,18 @@ get_header();
  <section>
    <div class="page-main">
      <div class="page-container flex">
-       <div class="investment-img"></div>
+       <div class="investment-img margin-bottom"></div>
        <div class="about-desc">
          <br>
          <br>
          <br>
          <h3 class="cursive">Work with us!</h3>
          <br>
-         <p>Thank you for taking time to look through my work. For investment details and availability, please contact me for a detailed pricing guide. Wedding packages begin at $2000.</p><br>
+         <?php if ( have_posts() ) : while ( have_posts() ) : the_post();
+         the_content();
+         endwhile; else: ?>
+         <p>Sorry, no posts matched your criteria.</p>
+         <?php endif; ?>
          <div class="align-right">
            <h3 class="cursive">Get in touch</h3><br>
            <a href="<?php bloginfo('url') ?>/contact"><button class="btn-main btn-light">inquire</button></a>
