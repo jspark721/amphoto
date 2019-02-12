@@ -10,22 +10,27 @@
     <div class="header-category">
       <h2>browse by category</h2>
       <ul class="category-items">
-        <li><a>weddings</a></li>
-        <li><a>engagements</a></li>
-        <li><a>styled shoots</a></li>
-        <li><a>portraits</a></li>
-        <li><a>other</a></li>
+        <?php
+    			// get all the categories from the database
+    			$cats = get_categories();
+          $categories = get_categories();
+            foreach ($categories as $cat) {
+               $category_link = get_category_link($cat->cat_ID);
+               echo '<li><a href="'.esc_url( $category_link ).'" title="'.esc_attr($cat->name).'">'.$cat->name.'</a></li>';
+            } ?>
       </ul>
     </div>
   </div>
 </div>
+
+
 
 <div class="container">
   <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class="main-blog">
       <div class="blog-posts">
         <?php if (has_post_thumbnail()) : ?>
-        <div class="blog-date"><h4><?php the_date(get_option('date_format')); ?></h4></div>
+        <div class="blog-date"><h4><?php echo get_the_date(); ?></h4></div>
         <div class="blog-img">
           <?php the_post_thumbnail(); ?>
         </div>
@@ -59,9 +64,9 @@
 <?php endif; ?>
 
 <div class="blog-pagination">
-  <p class="pull-right"><?php previous_posts_link(__('Newer Posts »')); ?></p>
+  <p class="pull-left"><?php previous_posts_link(__('« Newer Posts')); ?></p>
 
-  <p class="pull-left"><?php next_posts_link(__('« Older Posts')); ?></p>
+  <p class="pull-right"><?php next_posts_link(__('Older Posts »')); ?></p>
 </div>
 
 <?php get_footer(); ?>

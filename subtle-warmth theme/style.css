@@ -424,7 +424,7 @@ section {
 /* category index page style */
 
 .category-title {
-  padding-top: 80px; }
+  padding-top: 100px; }
   .category-title h2 {
     text-align: center;
     text-transform: none;
@@ -656,7 +656,7 @@ footer {
         padding: 5px; }
 
 .container {
-  margin-top: 0;
+  margin-top: 100px;
 }
 
 .main-blog {
@@ -671,7 +671,6 @@ footer {
   height: 490px;
   max-width: 980px;
   right: 15%;
-  top: 10%;
   transition: all 0.5s ease; }
 
 .blog-img {
@@ -742,6 +741,7 @@ footer {
 
 .blog-pagination {
   width: 90%;
+  margin-top: 10%;
   height: 90px;
   margin: 0 5%; }
 
@@ -750,6 +750,20 @@ footer {
 
 .pull-left {
   float: left; }
+
+.center {
+  float: left;
+  position: absolute;
+  left: 45%;
+}
+
+.pull-right a:hover,
+.pull-left a:hover,
+.center a:hover {
+  text-decoration: underline;
+  color: #B5B5C0;
+  transition: all .5s ease;
+}
 
 /*blog small styling changes*/
 .blog-content {
@@ -861,7 +875,7 @@ footer {
     margin-top: 20px; }
 
 .post-nav {
-  margin-top: 50px; }
+  margin-top: 80px; }
   .post-nav a {
     cursor: pointer; }
 
@@ -984,7 +998,8 @@ footer {
     padding-top: 50px;
     padding-bottom: 50px; }
   .container {
-    margin-top: 330px;
+    margin-top: 400px;
+    margin-bottom: 10%;
     margin-left: 55px;
   }
   .gallery-page-container {
@@ -1030,7 +1045,7 @@ footer {
   .header {
     height: 350px; }
   .container {
-    margin-top: 200px; }
+    margin-top: 250px; }
   .blog-img {
     width: 320px; }
   .blog-summary {
@@ -1095,14 +1110,12 @@ footer {
   .main-blog {
     width: 100%; }
   .container {
-    margin-top: 370px; }
+    margin-top: 430px; }
   .blog-title a {
     color: #836B67;
     padding: 10px; }
   .blog-date {
     left: 43%; }
-  .blog-posts {
-    top: 15%; }
   .blog-img {
     width: 90%;
     left: 3%; }
@@ -1116,7 +1129,9 @@ footer {
   .line-break {
     margin-left: 45%; }
   .tags:hover {
-    color: #FFFFFF; } }
+    color: #FFFFFF; }
+  .center {
+    left: 40%; } }
 
 @media only screen and (max-width: 430px) {
   .hero {
@@ -1139,4 +1154,5 @@ footer {
     margin-left: 32px; }
   .blog-date {
     left: 41%; }
-}
+  .center {
+    left: 38%; }}

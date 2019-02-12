@@ -9,7 +9,7 @@
 <div class="post-container">
   <div class="post-category"><h4><?php the_category('  ,  '); ?></h4></div>
   <div class="post-title"><h1><?php the_title(); ?></h1></div>
-  <div class="post-date"><h4><?php the_date(get_option('date_format')); ?></h4></div>
+  <div class="post-date"><h4><?php echo get_the_date(); ?></h4></div>
   <div class="post-vline"></div>
   <div class="post-feature-img">
     <?php the_post_thumbnail('large'); ?>
