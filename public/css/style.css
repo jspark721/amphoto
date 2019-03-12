@@ -208,7 +208,7 @@ button {
 
 .quote {
   position: relative;
-  width: 100%;
+  width: 100vw;
   height: 75vh;
   background: url("../img/header2.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -435,6 +435,12 @@ footer {
     padding-bottom: 10px; } }
 
 @media only screen and (max-width: 765px) {
+  .header-blog {
+    margin-top: -80px;
+    padding-top: 50px;
+    padding-bottom: 50px; }
+  .main-blog {
+    margin-top: 80px; }
   .blog-posts {
     width: 100%;
     left: 2%; }
@@ -456,8 +462,6 @@ footer {
       font-size: 0.8em; } }
 
 @media only screen and (max-width: 625px) {
-  .main-blog {
-    margin-top: 5px; }
   .blog-img {
     width: 320px; }
   .blog-summary {
@@ -480,6 +484,8 @@ footer {
         cursor: pointer;
         border: 1px solid #836B67;
         padding: 5px; }
+  .blog-posts {
+    top: 15%; }
   .blog-img {
     width: 100%;
     left: 5%; }
@@ -553,7 +559,8 @@ footer {
     right: 25px;
     top: 70px;
     padding: 0;
-    margin: 0; }
+    margin: 0;
+    background: #D5C1BE; }
     .navbar li {
       padding: 5px 10px; }
   .bar {
@@ -598,3 +605,19 @@ footer {
     font-size: 1.5em; }
   .footer-text p {
     font-size: 7px; } }
+
+@media only screen and (max-width: 430px) {
+  .quote {
+    background: url("../img/header2-mobile.jpg") 0 0/contain; } }
+
+/*new styles*/
+.blog-pagination {
+  width: 90%;
+  height: 50px;
+  margin: 0 5%; }
+
+.pull-right {
+  float: right; }
+
+.pull-left {
+  float: left; }

@@ -6,6 +6,10 @@ if( ! function_exists ('subtlewarmth_setup')) :
       // let WordPress handle the title tags
       add_theme_support( 'title-tag' );
       add_theme_support( 'post-thumbnails' );
+<<<<<<< HEAD
+=======
+      set_post_thumbnail_size( 450, 450, true);
+>>>>>>> 42d3effa0f86a1e487d1022528f04224bbc30b18
     }
 
 endif;
