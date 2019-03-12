@@ -41,10 +41,10 @@ get_header();
             <h4 class="gallery-title cursive">portraits</h4>
           </div>
         </a>
-        <a href="<?php bloginfo('url') ?>/gallery/other">
+        <a href="<?php bloginfo('url') ?>/gallery/lifestyle">
           <div class="gallery-item">
             <img class="gallery-img" src="<?php bloginfo('template_url') ?>/img/gallery4.jpg" />
-            <h4 class="gallery-title cursive">other</h4>
+            <h4 class="gallery-title cursive">lifestyle</h4>
           </div>
         </a>
       </div>

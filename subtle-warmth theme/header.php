@@ -33,6 +33,7 @@
          <li><a href="<?php bloginfo('url') ?>/about">about</a></li>
          <li><a href="<?php bloginfo('url') ?>/gallery">gallery</a></li>
          <li><a href="<?php bloginfo('url') ?>/investment">investment</a></li>
+         <li><a href="<?php bloginfo('url') ?>/blog">blog</a></li>
          <li><a href="<?php bloginfo('url') ?>/contact">contact</a></li>
          <!-- <li><a href="<?php bloginfo('url') ?>/blog">blog</a></li> -->
        </ul>

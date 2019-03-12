@@ -355,9 +355,10 @@ footer {
   color: #B5B5C0;
   position: absolute;
   left: -40px; }
+  .blog-date span {
+    font-family: "Modena", cursive; }
   .blog-date h4 {
-    font-family: "Lora", serif;
-    text-transform: uppercase; }
+    font-family: "Lora", serif; }
 
 .blog-summary {
   position: absolute;

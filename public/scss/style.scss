@@ -417,9 +417,11 @@ footer {
   color: $gray;
   position: absolute;
   left: -40px;
+  span {
+    font-family: $cursive;
+  }
   h4 {
     font-family: $serif;
-    text-transform: uppercase;
   }
 }
 
