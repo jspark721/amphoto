@@ -23,11 +23,7 @@
     ?>
   </div>
   <div class="gallery-button">
-<<<<<<< HEAD
     <a class="btn-main btn-sm btn-light" href="<?php bloginfo('url') ?>/gallery">back to gallery</a>
-=======
-    <a class="btn-main btn-sm btn-light" href="<?php bloginfo('url') ?>/gallery">back to top</a>
->>>>>>> 42d3effa0f86a1e487d1022528f04224bbc30b18
   </div>
 </div>
 
