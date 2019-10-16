@@ -1031,13 +1031,13 @@ footer {
     top: 73%; }
   .about-img, .investment-img {
     width: 90%;
-    margin: 100px auto 0px auto;
-    background-position: center; }
+    margin: 100px auto 25px auto; }
   .about-desc {
     width: 90%;
     margin: 0 auto 18% auto; }
   .flex {
-    display: block; }
+    display: block;
+	margin-bottom: 70px; }
   .container {
     margin-left: 0; }
   .main-blog {
