@@ -718,7 +718,7 @@ footer {
   cursor: pointer; }
   .blog-title a:hover {
     text-decoration: underline;
-    color: #cbb2af; }
+    color: #B5B5C0; }
 
 .blog-tags {
   margin-top: 70px; }
@@ -789,7 +789,20 @@ footer {
   letter-spacing: 2px;
   font-size: 9px;
 }
+.wp-block-image {
+  width: 1024px;
+  margin: 0;
+}
+.wp-block-image img {
+  margin-bottom: 1em;
+}
+.is-resized {
+  display: block !important;
+}
 
+.has-drop-cap:not(:focus):first-letter {
+  color: #D5C1BE;
+}
 .line-break {
   height: 1px;
   width: 10%;
@@ -871,6 +884,12 @@ footer {
     font-size: 12px;
     line-height: 1.6em;
     margin-bottom: 35px; }
+  .post-content a {
+    color: #9F9FAD;
+    border-bottom: 1px solid #9F9FAD; }
+  .post-content a:hover {
+    color: #D5C1BE;
+    border-bottom: 1px solid #D5C1BE; }
   .post-content .blog-tags {
     margin-top: 20px; }
 
@@ -973,6 +992,7 @@ footer {
     visibility: hidden;
     transition: opacity .5s, visibility .1s; }
     nav a {
+      text-decoration: none;
       text-transform: uppercase;
       font-size: 10px;
       padding: 3px;
@@ -1187,6 +1207,9 @@ footer {
     margin-left: 32px; }
   .blog-date {
     left: 41%; }
+  .logo-item img{
+	width: 100px;
+  }
   .center {
     left: 38%; }}
 
