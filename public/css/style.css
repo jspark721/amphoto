@@ -621,3 +621,26 @@ footer {
 
 .pull-left {
   float: left; }
+
+/*logo grids*/
+.logo-container {
+  width: 80%;
+  margin-left: 10%;
+  margin-bottom: 70px;
+}
+.logo-container .cursive {
+  color: #B5B5C0;
+  margin-bottom: -20px;
+}
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.logo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-item img{
+  max-width: 120px;
+}

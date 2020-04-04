@@ -6,6 +6,9 @@ if( ! function_exists ('subtlewarmth_setup')) :
       // let WordPress handle the title tags
       add_theme_support( 'title-tag' );
       add_theme_support( 'post-thumbnails' );
+		
+		//image sizes 
+	  add_image_size( 'blog-image', 1024, 9999 );
     }
 
 endif;
@@ -21,6 +24,7 @@ function register_subtlewarmth_menus() {
     );
 }
 add_action('init', 'register_subtlewarmth_menus');
+
 
 /* add stylesheets */
 

@@ -12,7 +12,7 @@
   <div class="post-date"><h4><?php echo get_the_date(); ?></h4></div>
   <div class="post-vline"></div>
   <div class="post-feature-img">
-    <?php the_post_thumbnail('large'); ?>
+    <?php the_post_thumbnail( 'blog-image' ); ?>
   </div>
   <div class="post-break"></div>
   <div class="post-content">

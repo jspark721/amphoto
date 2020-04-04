@@ -538,7 +538,6 @@ footer {
   position: relative;
   margin: 0;
   width: 100%;
-  /* height: 90vh;  */
 }
 
 .page-container {
@@ -723,7 +722,7 @@ footer {
   cursor: pointer; }
   .blog-title a:hover {
     text-decoration: underline;
-    color: #cbb2af; }
+    color: #B5B5C0; }
 
 .blog-tags {
   margin-top: 70px; }
@@ -794,7 +793,20 @@ footer {
   letter-spacing: 2px;
   font-size: 9px;
 }
+.wp-block-image {
+  width: 1024px;
+  margin: 0;
+}
+.wp-block-image img {
+  margin-bottom: 1em;
+}
+.is-resized {
+  display: block !important;
+}
 
+.has-drop-cap:not(:focus):first-letter {
+  color: #D5C1BE;
+}
 .line-break {
   height: 1px;
   width: 10%;
@@ -876,6 +888,12 @@ footer {
     font-size: 12px;
     line-height: 1.6em;
     margin-bottom: 35px; }
+  .post-content a {
+    color: #9F9FAD;
+    border-bottom: 1px solid #9F9FAD; }
+  .post-content a:hover {
+    color: #D5C1BE;
+    border-bottom: 1px solid #D5C1BE; }
   .post-content .blog-tags {
     margin-top: 20px; }
 
@@ -883,6 +901,30 @@ footer {
   margin-top: 80px; }
   .post-nav a {
     cursor: pointer; }
+
+/*logo grids*/
+.logo-container {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: -100px;
+  margin-bottom: 70px;
+}
+.logo-container .cursive {
+  color: #B5B5C0;
+  margin-bottom: -20px;
+}
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.logo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo-item img{
+  max-width: 120px;
+}
 
 /* start media query styles */
 
@@ -956,6 +998,7 @@ footer {
     visibility: hidden;
     transition: opacity .5s, visibility .1s; }
     nav a {
+      text-decoration: none;
       text-transform: uppercase;
       font-size: 10px;
       padding: 3px;
@@ -1026,6 +1069,7 @@ footer {
   .blog-tags {
     margin-top: 40px; } }
 
+
 @media only screen and (max-width: 694px) {
   /* .page-main {
     height: 120vh; } */
@@ -1037,17 +1081,23 @@ footer {
     top: 73%; }
   .about-img, .investment-img {
     width: 90%;
-    margin: 100px auto 0px auto;
-    background-position: center; }
+    margin: 100px auto 25px auto; }
   .about-desc {
     width: 90%;
     margin: 0 auto 18% auto; }
   .flex {
-    display: block; }
+    display: block;
+	margin-bottom: 70px; }
   .container {
     margin-left: 0; }
   .main-blog {
     width: 90%; }
+  .logo-container {
+	margin-top: 10px;
+  }
+  .logo-grid{
+	grid-template-columns: 1fr 1fr;
+	grid-row-gap: 20px; }
 }
 
 @media only screen and (max-width: 620px) {
@@ -1163,6 +1213,9 @@ footer {
     margin-left: 32px; }
   .blog-date {
     left: 41%; }
+  .logo-item img{
+	width: 100px;
+  }
   .center {
     left: 38%; }}
 
