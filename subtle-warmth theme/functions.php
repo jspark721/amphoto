@@ -6,8 +6,8 @@ if( ! function_exists ('subtlewarmth_setup')) :
       // let WordPress handle the title tags
       add_theme_support( 'title-tag' );
       add_theme_support( 'post-thumbnails' );
-		
-		//image sizes 
+
+		//image sizes
 	  add_image_size( 'blog-image', 1024, 9999 );
     }
 
@@ -32,7 +32,7 @@ function subtlewarmth_scripts() {
     // enqueue the main stylesheet
     wp_enqueue_style('subtlewarmth_styles', get_stylesheet_uri());
     // enqueue google fonts Lora & Garamound
-    wp_enqueue_style('subtlewarmth_google_fonts', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lora&family=Nunito+Sans:wght@300;400&display=swap');
+    wp_enqueue_style('subtlewarmth_google_fonts', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Lora&family=Nunito+Sans:wght@300;400&display=swap');
 }
 
 add_action('wp_enqueue_scripts', 'subtlewarmth_scripts');

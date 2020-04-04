@@ -66,7 +66,7 @@ ul, ol {
 button {
   display: inline-block;
   text-transform: uppercase;
-  padding: 20px;
+  padding: 15px;
   outline: 0;
   border: none;
   cursor: pointer;
@@ -118,7 +118,7 @@ button {
     font-family: "Nunito Sans", sans-serif;
     letter-spacing: 3px;
     padding: 5px;
-    font-size: 10px; }
+    font-size: 11px; }
     .navbar-full a:hover {
       color: #FAF5F0;
       background: #D5C1BE;
@@ -211,10 +211,10 @@ button {
 
 .section-title h5 {
   font-family: "Lora", serif;
-  text-transform: lowercase;
-  letter-spacing: 0px;
-  font-size: 2em;
-  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 1em;
+  margin-bottom: 10px;
 }
 
 .section-box {
@@ -247,10 +247,11 @@ button {
     margin-top: 20%;
     line-height: 1.3em; }
   .quote span {
+    font-weight: 100;
     font-family: "Lora", serif; }
 
 .overlay {
-  /* background-color: rgba(22, 22, 14, 0.3); */
+  background-color: rgba(22, 22, 14, 0.3);
   position: absolute;
   left: 0;
   right: 0;
@@ -268,8 +269,9 @@ button {
     padding-top: 10%;
     padding-left: 10%;
     color: #FAF5F0;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 3px rgba(213, 193, 190, 0.5); }
+    font-size: 2.2em;
+    /* text-shadow: 1px 1px 3px rgba(213, 193, 190, 0.5); */
+   }
   .overlay .buttons {
     margin-left: 10%;
     margin-top: -10px; }
