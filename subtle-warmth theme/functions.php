@@ -28,7 +28,7 @@ function subtlewarmth_scripts() {
     // enqueue the main stylesheet
     wp_enqueue_style('subtlewarmth_styles', get_stylesheet_uri());
     // enqueue google fonts Lora & Garamound
-    wp_enqueue_style('subtlewarmth_google_fonts', 'https://fonts.googleapis.com/css?family=Lora|Cormorant+Garamond');
+    wp_enqueue_style('subtlewarmth_google_fonts', 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Lora&family=Nunito+Sans:wght@300;400&display=swap');
 }
 
 add_action('wp_enqueue_scripts', 'subtlewarmth_scripts');
