@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/jspark721/amphoto#readme",
   "devDependencies": {
-    "node-sass": "^4.10.0",
+    "node-sass": "^4.13.1",
     "nodemon": "^1.18.7"
   }
 }
