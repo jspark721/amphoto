@@ -192,6 +192,7 @@ button {
 .main-quote {
   font-weight: 100;
   font-style: italic;
+  text-align: left;
   font-size: 1.3em;
   padding: 5px 90px;
   font-family: "Cormorant Garamond", serif;
@@ -973,9 +974,6 @@ footer {
   /* start of large tablet styles */
   .page-container {
     width: 90%; }
-  .main {
-    margin-left: 45px;
-    margin-right: 45px; }
   .section-container {
     margin-left: 45px;
     margin-right: 45px; } }
@@ -1071,6 +1069,22 @@ footer {
     height: 40%; }
     .header {
       height: 200px; }
+  .main {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main-img {
+    margin-left: 0;
+  }
+  .main-text {
+    align-items: center;
+  }
+  .main-quote {
+    text-align: center;	
+  }
+  .main-link {
+    padding-left: 0;
+  }
   /* .page-main {
     height: 90vh; } */
   .page {
@@ -1143,6 +1157,9 @@ footer {
     height: 350px; }
   .container {
     margin-top: 250px; }
+  .section-container {
+	padding: 100px 0;
+  }
   .blog-img {
     width: 320px; }
   .blog-summary {
@@ -1152,11 +1169,10 @@ footer {
 @media only screen and (max-width: 594px) {
   /* start of phone styles */
   .section {
-    display: block;
-    margin: 25% auto 250px auto; }
+    display: block; }
   .section-box {
     margin-left: 10%;
-    margin-top: 15px;
+    margin-top: -15px;
     width: 80%;
     height: 300px; }
     .section-box:hover h5 {
