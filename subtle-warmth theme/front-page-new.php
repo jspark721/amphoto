@@ -23,9 +23,9 @@
   <div class="main">
 	<a href="<?php bloginfo('url') ?>/about">
 	  <img class="main-img" src="<?php bloginfo('template_url') ?>/img/home-ariel.jpg" /></a>
-    <div>
-      <h4 class="main-quote">I am a wedding photographer based in San Diego, CA.<br>I believe that what connects you and me - perfect strangers - are our stories.<br>We are more similar than not, yet no love is ordinary, and no story less unique.<br>That is my approach to every wedding.</h4>
-	    <a href="<?php bloginfo('url') ?>/about"><button class="btn-main">meet Ariel</button></a>
+    <div class="main-text">
+      <h4 class="main-quote">I am a wedding photographer based in San Diego, CA. I believe that what connects you and me - perfect strangers - are our stories. We are more similar than not, yet no love is ordinary, and no story less unique. That is my approach to every wedding.</h4>
+	    <a class="main-link" href="<?php bloginfo('url') ?>/about"><button class="btn-main">meet Ariel</button></a>
     </div>
   </div>
   <div class="main-line"></div>
