@@ -170,8 +170,7 @@ button {
   margin: 0 auto; }
 
 .main {
-  width: 100%;
-  margin: 0 45px;
+  margin: auto;
   max-width: 970px;
   background: #FAF5F0;
   display: flex;
@@ -179,20 +178,28 @@ button {
   padding-top: 100px; }
 
 .main-img {
-	width: 300px;
+  width: 300px;
+  margin-left: 75px;
+}
+.main-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-link {
+  padding-left: 90px;
 }
 .main-quote {
   font-weight: 100;
   font-style: italic;
-  text-align: center;
   font-size: 1.3em;
   padding: 5px 90px;
-  margin-bottom: 50px;
   font-family: "Cormorant Garamond", serif;
   color: #16160E; }
 
 .main-line {
-  width: 50%;
+  width: 65%;
+  margin: auto;
   margin-top: 70px;
   height: 5px;
   background: #D5C1BE;
@@ -966,6 +973,9 @@ footer {
   /* start of large tablet styles */
   .page-container {
     width: 90%; }
+  .main {
+    margin-left: 45px;
+    margin-right: 45px; }
   .section-container {
     margin-left: 45px;
     margin-right: 45px; } }
